@@ -1,0 +1,197 @@
+@font-face {
+    font-family: 'Kirsty';
+    src: url('fonts/KirstyRg.ttf') format('ttf');
+    font-weight: auto;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Almendra';
+    src: url('fonts/Almendra-Regular.woff2') format('woff2'),
+        url('fonts/Almendra-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*Zrewidować, jako że nadpisuje efektywnie formatowanie źródłowe edutora*/
+/*
+.tox-editor-container,
+.editor-content
+{
+    font-family: 'Bookman Old Style', 'Modesto Condensed', "Do Hyeon", serif;
+}
+
+.editor-content table
+{
+    background-color: white;
+    font-family: 'Calibri', 'Modesto Condensed', "Do Hyeon", serif;
+    border: 0;
+    text-align: center;
+}
+
+.editor-content table.left-2 tr td:nth-child(2) {
+    text-align: left;
+}
+
+.editor-content table.left-3 tr td:nth-child(3) {
+    text-align: left;
+}
+
+.editor-content table.left-4 tr td:nth-child(4) {
+    text-align: left;
+}
+
+.editor-content table.left-6 tr td:nth-child(6) {
+    text-align: left;
+}
+
+.editor-content table thead
+{
+    background-color: white;
+    color: black;
+    border: 0;
+    text-shadow: none;
+    font-weight: bold;
+}
+
+.editor-content table tbody tr:nth-child(odd) {
+    background-color: #e0e5c1;
+}
+
+.editor-content h1,
+.editor-content h2,
+.editor-content h4,
+.editor-content h5,
+.editor-content h6
+{
+    font-family: 'Bookman Old Style', 'Modesto Condensed', "Do Hyeon", serif;
+    font-variant: small-caps;
+    font-weight: bold;
+    color: #58180d;
+}
+
+.editor-content h3
+{
+    font-family: 'Bookman Old Style', 'Modesto Condensed', "Do Hyeon", serif;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: large;
+    color: #58180d;
+}
+*/
+
+.modesto,
+.dnd5e .form-header,
+.dnd5e.sheet .sheet-header .header-details,
+.dnd5e.sheet .sheet-navigation,
+.dnd5e.sheet.actor h4.box-title,
+.dnd5e.sheet.actor ul.attributes li.attribute .attribute-value,
+.dnd5e.sheet.actor .ability-scores,
+.dnd5e.sheet.actor .inventory-list .inventory-header h3,
+.dnd5e.chat-card .card-header h3,
+.dnd5e.sheet .items-list .items-header h3,
+.dnd5e.sheet.actor.character .characteristics label,
+.dnd5e.sheet.actor.character .resource .attribute-value label.recharge,
+.dnd5e.sheet.actor ul.attributes li.attribute .attribute-footer
+{
+	font-family: 'Almendra', 'Modesto Condensed', 'Do Hyeon', serif;
+}
+
+.attribute-footer
+{
+    text-overflow:ellipsis;
+    overflow:hidden; 
+    width:100%;
+}
+
+/* Size changes are needed to accomodate for a new font and texts */
+
+.dnd5e.sheet.actor.character {
+    min-width: 906px;
+}
+
+.dnd5e.sheet.actor.vehicle
+{
+    min-width: 627px;
+    min-height: 680px;
+}
+
+.dnd5e.sheet.actor.npc
+{
+    min-width: 627px;
+}
+
+.dnd5e.sheet .sheet-navigation .item
+{
+    margin: 0 7px;
+}
+
+.dnd5e.sheet.actor.character ul.skills-list {
+    flex: 0 0 240px;
+}
+
+.dnd5e.sheet.actor.npc ul.skills-list {
+    flex: 0 0 240px;
+}
+
+.dnd5e.sheet.actor.npc ul.skills-list li.skill h4 {
+    font-size: 13px;
+}
+
+.dnd5e.sheet.actor .ability-scores .ability input.ability-score {
+    font-size: 30px;
+}
+
+.dnd5e.sheet.actor .attribute.health
+{
+    min-width: 190px;
+}
+
+.dnd5e.sheet.actor .attribute.hit-dice
+{
+    min-width: 175px;
+}
+
+/* Prevent line-breaking of rest buttons */
+.dnd5e.sheet.actor .rest{
+    white-space: nowrap;
+}
+
+.dnd5e.sheet.actor .attribute.armor-class
+{
+    min-width: 140px;
+}
+
+.dnd5e.sheet.actor .attribute.speed
+{
+    min-width: 120px;
+}
+
+.dnd5e.sheet.actor .attribute.initiative
+{
+    min-width: 105px;
+}
+
+.dnd5e.sheet.actor .attribute.resource .attribute-name.box-title
+{
+    font-size: 15px;
+}
+
+.dnd5e.sheet.actor.npc
+{
+    min-width: 700px;
+}
+
+.dnd5e.sheet.actor .attribute.resource .recharge.checkbox
+{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.dnd5e.sheet.item
+{
+    min-width: 850px;
+}
