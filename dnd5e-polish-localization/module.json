@@ -2,7 +2,7 @@
 	"name": "dnd5e-polish-localization",
 	"title": "DnD5e Polish Localization",
 	"description": "Adds Polish localization to DnD5e system for Foundry VTT.<br>Requires Babele module for proper compendium translation.",
-	"version": "1.0",
+	"version": "1.01",
 	"minimumCoreVersion" : "0.6.5",
 	"compatibleCoreVersion": "0.8.99",
 	"author": "Michał Gołaszewski",

@@ -1,11 +1,4 @@
 @font-face {
-    font-family: 'Kirsty';
-    src: url('fonts/KirstyRg.ttf') format('ttf');
-    font-weight: auto;
-    font-style: normal;
-}
-
-@font-face {
     font-family: 'Almendra';
     src: url('fonts/Almendra-Regular.woff2') format('woff2'),
         url('fonts/Almendra-Regular.woff') format('woff');
@@ -83,6 +76,8 @@
 .modesto,
 .dnd5e .form-header,
 .dnd5e.sheet .sheet-header .header-details,
+.dnd5e.sheet .sheet-header .header-details .summary,
+.dnd5e.sheet .sheet-header .header-details .summary select,
 .dnd5e.sheet .sheet-navigation,
 .dnd5e.sheet.actor h4.box-title,
 .dnd5e.sheet.actor ul.attributes li.attribute .attribute-value,
