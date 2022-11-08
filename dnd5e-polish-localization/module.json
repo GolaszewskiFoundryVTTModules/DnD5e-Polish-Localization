@@ -1,20 +1,37 @@
 {
-	"name": "dnd5e-polish-localization",
+	"id": "dnd5e-polish-localization",
 	"title": "DnD5e Polish Localization",
-	"description": "Adds Polish localization to DnD5e system for Foundry VTT.<br>Requires Babele module for proper compendium translation.",
-	"version": "1.01",
-	"minimumCoreVersion" : "0.6.5",
-	"compatibleCoreVersion": "0.8.99",
+	"description": "Adds Polish localization to DnD5e system for Foundry VTT.",
+	"version": "1.1",
+	"minimumCoreVersion" : "10",
+	"compatibleCoreVersion": "10.287",
 	"author": "Michał Gołaszewski",
-	"esmodules": ["babele-register.js", "character-sheet-overwrite.js"],
-	"styles": ["css/style.css"],
-	"system": "dnd5e",
 
-	"languages": [{
-		"lang": "pl",
-		"name": "Polish",
-		"path": "lang/pl.json"
-	}],
+	"scripts": [
+		"./src/character-sheet-overwrite.js"
+    ],
+
+	"styles": [
+		"css/style.css"
+	],
+	
+	"system": "dnd5e",
+    "minimumSystemVersion": "2.0.0",
+    "compatibleSystemVersion": "2.0.3",
+
+    "languages": [
+        {
+            "lang": "pl",
+            "name": "Polski",
+            "path": "./lang/pl.json"
+        }
+    ],
+
+    "dependencies": [
+    	{
+      		"name": "lib-wrapper"
+    	}
+    ],
 
 	"url": "https://github.com/GolaszewskiFoundryVTTModules/DnD5e-Polish-Localization",
 	"manifest": "https://raw.githubusercontent.com/GolaszewskiFoundryVTTModules/DnD5e-Polish-Localization/main/dnd5e-polish-localization/module.json",
