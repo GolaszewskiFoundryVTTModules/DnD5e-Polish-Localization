@@ -1,39 +1,33 @@
 {
-	"id": "dnd5e-polish-localization",
-	"title": "DnD5e Polish Localization",
-	"description": "Adds Polish localization to DnD5e system for Foundry VTT.",
-	"version": "1.1",
-	"minimumCoreVersion" : "10",
-	"compatibleCoreVersion": "10.287",
-	"author": "Michał Gołaszewski",
-
-	"scripts": [
-		"./src/character-sheet-overwrite.js"
-    ],
-
-	"styles": [
-		"css/style.css"
-	],
-	
-	"system": "dnd5e",
-    "minimumSystemVersion": "2.0.0",
-    "compatibleSystemVersion": "2.0.3",
-
-    "languages": [
-        {
-            "lang": "pl",
-            "name": "Polski",
-            "path": "./lang/pl.json"
-        }
-    ],
-
-    "dependencies": [
-    	{
-      		"name": "lib-wrapper"
-    	}
-    ],
-
-	"url": "https://github.com/GolaszewskiFoundryVTTModules/DnD5e-Polish-Localization",
-	"manifest": "https://raw.githubusercontent.com/GolaszewskiFoundryVTTModules/DnD5e-Polish-Localization/main/dnd5e-polish-localization/module.json",
-	"download": "https://github.com/GolaszewskiFoundryVTTModules/DnD5e-Polish-Localization/releases/download/v1.01/dnd5e-polish-localization.zip"
+  "id": "dnd5e-polish-localization",
+  "title": "DnD5e Polish Localization",
+  "description": "Adds Polish localization to DnD5e system for Foundry VTT.",
+  "version": "1.1",
+  "minimumCoreVersion": "10",
+  "compatibleCoreVersion": "10.287",
+  "author": "Michał Gołaszewski",
+  "scripts": [
+    "./src/character-sheet-overwrite.js"
+  ],
+  "styles": [
+    "css/style.css"
+  ],
+  "system": "dnd5e",
+  "minimumSystemVersion": "2.0.0",
+  "compatibleSystemVersion": "2.0.3",
+  "languages": [
+    {
+      "lang": "pl",
+      "name": "Polski",
+      "path": "./lang/pl.json"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "lib-wrapper"
+    }
+  ],
+  "url": "https://github.com/GolaszewskiFoundryVTTModules/DnD5e-Polish-Localization",
+  "manifest": "https://raw.githubusercontent.com/GolaszewskiFoundryVTTModules/DnD5e-Polish-Localization/main/dnd5e-polish-localization/module.json",
+  "download": "https://github.com/GolaszewskiFoundryVTTModules/DnD5e-Polish-Localization/releases/download/v1.01/dnd5e-polish-localization.zip"
 }
