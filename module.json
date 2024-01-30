@@ -7,19 +7,16 @@
     "src/character-sheet-overwrite.js"
   ],
   "styles": [
-    "css/style.css"
+    "css/DnD5ePLAdjustments.css"
   ],
   "languages": [
     {
       "lang": "pl",
       "name": "Polski",
-      "path": "lang/pl.json",
+      "path": "lang/pl/pl.json",
       "flags": {}
     }
   ],
-  "url": "https://github.com/GolaszewskiFoundryVTTModules/DnD5e-Polish-Localization",
-  "manifest": "https://raw.githubusercontent.com/GolaszewskiFoundryVTTModules/DnD5e-Polish-Localization/main/dnd5e-polish-localization/module.json",
-  "download": "https://github.com/GolaszewskiFoundryVTTModules/DnD5e-Polish-Localization/releases/download/v1.01/dnd5e-polish-localization.zip",
   "relationships": {
     "requires": [
       {
@@ -37,7 +34,7 @@
     ]
   },
   "compatibility": {
-    "minimum": "10",
-    "verified": "10.287"
+    "minimum": "11",
+    "verified": "11.315"
   }
 }
