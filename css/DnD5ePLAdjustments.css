@@ -6,73 +6,6 @@
     font-style: normal;
 }
 
-/*Zrewidować, jako że nadpisuje efektywnie formatowanie źródłowe edutora*/
-/*
-.tox-editor-container,
-.editor-content
-{
-    font-family: 'Bookman Old Style', 'Modesto Condensed', "Do Hyeon", serif;
-}
-
-.editor-content table
-{
-    background-color: white;
-    font-family: 'Calibri', 'Modesto Condensed', "Do Hyeon", serif;
-    border: 0;
-    text-align: center;
-}
-
-.editor-content table.left-2 tr td:nth-child(2) {
-    text-align: left;
-}
-
-.editor-content table.left-3 tr td:nth-child(3) {
-    text-align: left;
-}
-
-.editor-content table.left-4 tr td:nth-child(4) {
-    text-align: left;
-}
-
-.editor-content table.left-6 tr td:nth-child(6) {
-    text-align: left;
-}
-
-.editor-content table thead
-{
-    background-color: white;
-    color: black;
-    border: 0;
-    text-shadow: none;
-    font-weight: bold;
-}
-
-.editor-content table tbody tr:nth-child(odd) {
-    background-color: #e0e5c1;
-}
-
-.editor-content h1,
-.editor-content h2,
-.editor-content h4,
-.editor-content h5,
-.editor-content h6
-{
-    font-family: 'Bookman Old Style', 'Modesto Condensed', "Do Hyeon", serif;
-    font-variant: small-caps;
-    font-weight: bold;
-    color: #58180d;
-}
-
-.editor-content h3
-{
-    font-family: 'Bookman Old Style', 'Modesto Condensed', "Do Hyeon", serif;
-    font-variant: small-caps;
-    font-weight: bold;
-    font-size: large;
-    color: #58180d;
-}
-*/
-
 .modesto,
 .dnd5e .form-header,
 .dnd5e.sheet .sheet-header .header-details,
@@ -100,6 +33,11 @@
 }
 
 /* Size changes are needed to accomodate for a new font and texts */
+
+.dnd5e2.sheet.actor.character .sheet-header > .left .document-name
+{
+	font-family: 'Almendra', 'Modesto Condensed', 'Do Hyeon', serif;
+}
 
 .dnd5e.sheet.actor.character {
     min-width: 906px;
