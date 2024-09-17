@@ -48,7 +48,9 @@
         "JournalEntryPage": {
             "class": "Class Summary",
             "map": "Map Location",
-            "rule": "Rule"
+            "rule": "Rule",
+            "spells": "Spell List",
+            "subclass": "Subclass Summary"
         }
     },
     "ITEM": {
@@ -122,6 +124,7 @@
         "AbilityUseConsumableDestroyHint": "Using this {type} will consume its final charge and it will be destroyed.",
         "AbilityUseConsumableDestroyResourceHint": "Using this {type} will consume the final charge off {name} and destroy it.",
         "AbilityUseConsume": "Consume Available Usage?",
+        "AbilityUseConsumeAction": "Consume Usage",
         "AbilityUseChargesLabel": "{value} Charges",
         "AbilityUseConsumableLabel": "{max} per {per}",
         "AbilityUseCast": "Cast Spell",
@@ -140,13 +143,15 @@
         "ActionAbbr": "A",
         "ActionPl": "Actions",
         "ActionAbil": "Ability Check",
-        "ActionHeal": "Healing",
+        "ActionEnch": "Enchant",
+        "ActionHeal": "Heal",
         "ActionMSAK": "Melee Spell Attack",
         "ActionMWAK": "Melee Weapon Attack",
         "ActionOther": "Other",
         "ActionRSAK": "Ranged Spell Attack",
         "ActionRWAK": "Ranged Weapon Attack",
         "ActionSave": "Saving Throw",
+        "ActionSumm": "Summon",
         "ActionUtil": "Utility",
         "ActionWarningNoItem": "The requested item {item} no longer exists on Actor {name}",
         "ActionWarningNoToken": "You must have one or more controlled Tokens in order to use this option.",
@@ -155,6 +160,7 @@
         "ActiveEffectOverrideWarning": "This value is being modified by an Active Effect and cannot be edited. Disable the effect to edit it.",
         "Add": "Add",
         "AdditionalControls": "Additional Controls",
+        "AdditionalSettings": "Additional Settings",
         "AddEmbeddedItemPromptHint": "Do you want to add these items to your character sheet?",
         "AdvancementAbilityScoreImprovementTitle": "Ability Score Improvement",
         "AdvancementAbilityScoreImprovementHint": "Allow the player to increase one or more ability scores or take an optional feat.",
@@ -165,6 +171,7 @@
             "other": "Max {points} points per score"
         },
         "AdvancementAbilityScoreImprovementFeatHint": "Drop a feat here to choose one instead of an ability score improvement.",
+        "AdvancementAbilityScoreImprovementFeatLevelWarning": "Must be at least level {level} to take this feat.",
         "AdvancementAbilityScoreImprovementFeatWarning": "Only features with the 'feat' type can be selected.",
         "AdvancementAbilityScoreImprovementFixed": "Fixed Improvement",
         "AdvancementAbilityScoreImprovementLockedHint": "Scores cannot be modified with a feat selected.",
@@ -210,15 +217,22 @@
         "AdvancementHitPointsRollButton": "Roll {die}",
         "AdvancementItemChoiceTitle": "Choose Items",
         "AdvancementItemChoiceHint": "Present the player with a choice of items (such as equipment, features, or spells) that they can choose for their character at one or more levels.",
+        "AdvancementItemChoiceChoices": "Choices",
+        "AdvancementItemChoiceChoose": "choose {count}",
         "AdvancementItemChoiceChosen": "Chosen: {current} of {max}",
+        "AdvancementItemChoiceFeatureLevelWarning": "Must be at least level {level} to take this feature.",
         "AdvancementItemChoiceLevelsHint": "Specify how many choices are allowed at each level.",
+        "AdvancementItemChoiceNoOriginalError": "Previously selected choice no longer available for replacement.",
         "AdvancementItemChoicePreviouslyChosenWarning": "This item has already been chosen at a previous level.",
+        "AdvancementItemChoiceReplacement": "Allow Replacement",
+        "AdvancementItemChoiceReplacementNone": "No Replacement",
+        "AdvancementItemChoiceReplacementTitle": "replace",
         "AdvancementItemChoiceSpellLevelAvailable": "Any Available Level",
         "AdvancementItemChoiceSpellLevelAvailableWarning": "Only {level} or lower spells can be chosen for this advancement.",
         "AdvancementItemChoiceSpellLevelSpecificWarning": "Only {level} spells can be chosen for this advancement.",
         "AdvancementItemChoiceSpellLevelHint": "Only allow choices from spells of this level.",
         "AdvancementItemChoiceType": "Item Type",
-        "AdvancementItemChoiceTypeHint": "Restrict what Item types can be choosen.",
+        "AdvancementItemChoiceTypeHint": "Restrict what Item types can be chosen.",
         "AdvancementItemChoiceTypeAny": "Anything",
         "AdvancementItemChoiceTypeWarning": "Only {type} items can be selected for this choice.",
         "AdvancementItemGrantTitle": "Grant Items",
@@ -228,7 +242,7 @@
         "AdvancementItemGrantDuplicateWarning": "That item already exists on this advancement.",
         "AdvancementItemGrantRecursiveWarning": "You cannot grant an item in its own advancement.",
         "AdvancementItemGrantOptional": "Optional",
-        "AdvancementItemGrantOptionalHint": "If optional, players will be given the option to opt out of any of the following items, otherwise all of them are granted.",
+        "AdvancementItemGrantOptionalHint": "If the whole advancement is marked optional, players may opt out of any of the following items, otherwise all non-optional items are granted.",
         "AdvancementItemTypeInvalidWarning": "{type} items cannot be added with this advancement type.",
         "AdvancementLevelHeader": "Level {level}",
         "AdvancementLevelAnyHeader": "Any Level",
@@ -299,6 +313,7 @@
         "AdvancementTraitModeUpgradeHint": "Gain proficiency in a trait unless you already have it, otherwise gain expertise.",
         "AdvancementTraitType": "Trait Type",
         "Advantage": "Advantage",
+        "AdvantageMode": "Advantage Mode",
         "Age": "Age",
         "Alignment": "Alignment",
         "AlignmentCE": "Chaotic Evil",
@@ -315,6 +330,7 @@
         "Attunement": "Attunement",
         "AttunementMax": "Maximum Attuned Items",
         "AttunementNone": "Attunement Not Required",
+        "AttunementOptional": "Optional Attunement",
         "AttunementRequired": "Attunement Required",
         "AttunementAttuned": "Attuned",
         "AttunementOverride": "Override attunement",
@@ -344,6 +360,9 @@
         "AttackPl": "Attacks",
         "AttackRoll": "Attack Roll",
         "Attributes": "Attributes",
+        "AttrConcentration": {
+            "Limit": "Limit"
+        },
         "Automatic": "Automatic",
         "AutomaticValue": "Automatic ({value})",
         "Award": {
@@ -369,6 +388,7 @@
         "BonusAbility": "Global Ability Bonuses",
         "BonusAbilityCheck": "Global Ability Check Bonus",
         "BonusAbilitySave": "Global Saving Throw Bonus",
+        "BonusAbilitySaveTitle": "Global Saving Throws",
         "BonusAbilitySkill": "Global Skill Check Bonus",
         "BonusAction": "Bonus Action",
         "BonusActionAbbr": "BA",
@@ -390,6 +410,12 @@
         "BonusesHint": "Define global bonuses as formulas which are added to certain rolls. For example: 1d4 + 2",
         "BonusesInstructions": "Configure character bonuses which are added to the appropriate dice roll",
         "Conditions": "Conditions",
+        "Controls": {
+            "Hint": "Enable various hints throughout the UI for certain mouse and keyboard controls.",
+            "LockHint": "Middle-click to lock",
+            "MiddleClick": "Middle Click",
+            "Name": "Enable Control Hints"
+        },
         "ChallengeRating": "Challenge Rating",
         "Charged": "Charged",
         "Charges": "Charges",
@@ -398,6 +424,8 @@
         "ChatContextTempHP": "Apply Temporary HP",
         "ChatContextDoubleDamage": "Apply Double Damage",
         "ChatContextHalfDamage": "Apply Half Damage",
+        "ChatContextSelectHit": "Select Hit Targets",
+        "ChatContextSelectMiss": "Select Missed Targets",
         "ChatFlavor": "Chat Message Flavor",
         "CheckBonus": "Check Bonus",
         "ClassAdd": "Add Class",
@@ -409,6 +437,7 @@
         "ClassName": "Class Name",
         "ClassOriginal": "Original Class",
         "ClassSaves": "Saving Throws",
+        "Confirm": "Confirm",
         "ComponentMaterial": "Material",
         "ComponentMaterialAbbr": "M",
         "ComponentSomatic": "Somatic",
@@ -452,9 +481,27 @@
         "ConUnconscious": "Unconscious",
         "Concentration": "Concentration",
         "ConcentrationAbbr": "C",
+        "ConcentrationBreak": "Break Concentration",
+        "ConcentrationBreakWarning": "Breaking concentration on an effect that is active on other creatures requires an active GM to be present.",
+        "ConcentrationBonus": "Concentration Bonus",
         "ConcentrationDuration": "Concentration, up to {duration}",
+        "ConcentratingOn": "You are maintaining concentration on the effects of the '{name}' {type}.",
+        "ConcentratingEndChoice": "You are concentrating on effects from more than one source. Pick which effect to end.",
+        "ConcentratingMissingItem": "The effect that is concentrated on and to be replaced does not exist.",
+        "ConcentratingLimited": "You are not able to begin concentrating on an additional effect.",
+        "ConcentrationLimit": "Concentration Limit",
+        "ConcentratingEnd": "End Concentration",
+        "ConcentratingItemless": "Concentration With No Source",
+        "ConcentratingWarnLimit": "You cannot maintain concentration on more effects!",
+        "ConcentratingWarnLimitOptional": "You may end concentration on one of your maintained effects to use this item.",
+        "ConcentratingWarnLimitZero": "You are not able to maintain concentration on any effects!",
+        "ConcentrationConfigurationHint": "Configure concentration modifiers and bonuses which apply to this creature.",
         "ConsumeTitle": "Resource Consumption",
         "ConsumeAmount": "Consumption Amount",
+        "ConsumeHint": {
+            "Attribute": "Attribute to consume (e.g. currency.gp)",
+            "Item": "UUID of target in compendium"
+        },
         "ConsumeTarget": "Consumption Target",
         "ConsumeType": "Consumption Category",
         "ConsumeAmmunition": "Ammunition",
@@ -471,6 +518,7 @@
         "ConsumeWarningNoQuantity": "{name} has run out of its designated {type}!",
         "ConsumeWarningZeroAttribute": "{name} has run out of its designated attribute resource pool!",
         "ConsumeResource": "Consume Resource?",
+        "ConsumeResourceAction": "Consume Resource",
         "ConsumeRecharge": "Consume Recharge?",
         "ConsumeScaling": "Resource Scaling",
         "ConsumeScalingLabel": "Use Resources",
@@ -574,11 +622,26 @@
         "Damage": "Damage",
         "DamageAcid": "Acid",
         "DamageAll": "All Damage",
+        "DamageApplication": {
+            "Change": {
+                "Modification": "{type} Modification",
+                "Immunity": "{type} Immunity",
+                "Resistance": "{type} Resistance",
+                "Vulnerability": "{type} Vulnerability"
+            },
+            "Downgrading": "Downgrading {source} to Resistance",
+            "Ignoring": "Ignoring {source}"
+        },
         "DamageBludgeoning": "Bludgeoning",
         "DamageCold": "Cold",
         "DamageFire": "Fire",
         "DamageForce": "Force",
         "DamageLightning": "Lightning",
+        "DamageModification": {
+            "Label": "Damage Modification",
+            "Hint": "Formulas for amounts that will be added to typed damage applied to this actor. Negative values will reduce the damage taken.",
+            "BypassHint": "These weapon properties will bypass damage modification for physical damage."
+        },
         "DamageNecrotic": "Necrotic",
         "DamagePiercing": "Piercing",
         "DamagePhysical": "Non-Magical Physical",
@@ -642,6 +705,7 @@
         "DistMiAbbr": "mi",
         "DistSelf": "Self",
         "DistTouch": "Touch",
+        "DocumentUseWarn": "You lack permission to use an item on this document.",
         "DocumentViewWarn": "You lack permission to view this document.",
         "Duration": "Duration",
         "DurationPermanent": "Permanent",
@@ -653,8 +717,83 @@
         "Effect": "Effect",
         "Effects": "Effects",
         "EffectsApplyTokens": "Apply to selected tokens",
-        "EffectApplyWarning": "Effects cannot be applied to tokens you are not the owner of.",
+        "EffectApplyWarningConcentration": "Applying an effect that is being concentrated on by another character requires GM permissions.",
+        "EffectApplyWarningOwnership": "Effects cannot be applied to tokens you are not the owner of.",
         "EffectsSearch": "Search effects",
+        "Enchantment": {
+            "Action": {
+                "Apply": "Apply Enchantment",
+                "Configure": "Configure Enchantment",
+                "Create": "Create Enchantment",
+                "Delete": "Delete Enchantment",
+                "Disable": "Disable Enchantment",
+                "Edit": "Edit Enchantment",
+                "Enable": "Enable Enchantment",
+                "Remove": "Remove Enchantment"
+            },
+            "Category": {
+                "Active": "Active Enchantments",
+                "Empty": "No enchantments have been created, use the button above to create one.",
+                "General": "Enchantments",
+                "Inactive": "Inactive Enchantments"
+            },
+            "Configuration": "Enchantment Configuration",
+            "DropArea": "Place item here to enchant it…",
+            "FIELDS": {
+                "enchantment": {
+                    "label": "Enchantment Configuration",
+                    "classIdentifier": {
+                        "hint": "Identifier used to determine whether the character level or a specific class level should be used for enchantment level limits."
+                    },
+                    "items": {
+                        "max": {
+                            "label": "Item Limit",
+                            "hint": "Formula for the maximum number of enchantments of this type that can be active at a time."
+                        },
+                        "period": {
+                            "label": "Replacement Period",
+                            "hint": "How frequently the enchantments of this type can be re-bound to different items."
+                        }
+                    },
+                    "restrictions": {
+                        "label": "Restrictions",
+                        "hint": "Restrictions on the type of item to which this enchantment can be applied.",
+                        "allowMagical": {
+                            "label": "Allow Magical",
+                            "hint": "Allow items that are already magical to be enchanted."
+                        },
+                        "type": {
+                            "label": "Item Type",
+                            "hint": "Type of item to which this enchantment can be applied."
+                        }
+                    }
+                }
+            },
+            "Label": "Enchantment",
+            "Level": {
+                "Hint": "Range of levels required to use this enchantment."
+            },
+            "Items": {
+                "Entry": "{item} on  <em>{actor}</em>"
+            },
+            "Riders": {
+                "Effect": {
+                    "Label": "Additional Effects",
+                    "Hint": "These additional effects will be added to the enchanted item when this enchantment is added, and removed when the enchantment is removed."
+                },
+                "Item": {
+                    "Label": "Additional Items",
+                    "Hint": "These additional items will be added to the creature when one of its items is enchanted, and will be removed if the enchantment is ever removed."
+                }
+            },
+            "Warning": {
+                "ConcentrationEnded": "Cannot apply this enchantment because concentration has ended.",
+                "NoMagicalItems": "Items that are already magical cannot be enchanted.",
+                "NotOnActor": "Enchantments can only be added to items, not directly to actors.",
+                "Override": "This value is being modified by an Enchantment and cannot be edited. Disable the enchantment in the effects tab to edit it.",
+                "WrongType": "{incorrectType} items cannot be enchanted by this enchantment, only {allowedType} items are allowed."
+            }
+        },
         "Environment": "Environment",
         "EquipmentBonus": "Magical Bonus",
         "EquipmentClothing": "Clothing",
@@ -677,6 +816,7 @@
         "ExperiencePointsMin": "Minimum XP for This Level",
         "ExperiencePointsValue": "XP Value",
         "Expertise": "Expertise",
+        "Favorite": "Favorite",
         "FavoriteDrop": "Drop Favorite",
         "FavoriteRemove": "Remove Favorite",
         "Favorites": "Favorites",
@@ -713,6 +853,7 @@
             }
         },
         "Focus": {
+            "Label": "Spellcasting Focus",
             "Arcane": "Arcane Focus",
             "Druidic": "Druidic Focus",
             "Holy": "Holy Focus"
@@ -738,6 +879,12 @@
         "EffectPassive": "Passive Effects",
         "EffectInactive": "Inactive Effects",
         "EffectNew": "New Effect",
+        "EffectType": {
+            "Inactive": "Inactive",
+            "Passive": "Passive",
+            "Temporary": "Temporary",
+            "Unavailable": "Unavailable"
+        },
         "EffectUnavailable": "Unavailable Effects",
         "EffectUnavailableInfo": "Source item must be equipped or attuned to activate these",
         "Encumbrance": "Encumbrance",
@@ -821,6 +968,7 @@
                 "one": "Member",
                 "other": "Members"
             },
+            "PlaceMembers": "Place Members",
             "Primary": {
                 "Remove": "Remove as Primary Party",
                 "Set": "Set as Primary Party"
@@ -837,6 +985,7 @@
         "Hair": "Hair",
         "HalfProficient": "Half Proficient",
         "Healing": "Healing",
+        "HealingRoll": "Healing Roll",
         "HealingTemp": "Healing (Temporary)",
         "Height": "Height",
         "HitPoints": "Hit Points",
@@ -857,6 +1006,10 @@
         "HPFormulaRollMessage": "Roll Hit Point Formula",
         "HitDie": "Hit Die",
         "HitDice": "Hit Dice",
+        "HitDiceAutoSpend": {
+            "Label": "Auto Spend HD",
+            "Hint": "Automatically spend hit dice until they run out or health is full."
+        },
         "HitDiceConfig": "Adjust Hit Dice",
         "HitDiceConfigHint": "Adjust remaining hit dice levels for each class.",
         "HitDiceMax": "Maximum Hit Dice",
@@ -864,6 +1017,7 @@
         "HitDiceRoll": "Roll Hit Dice",
         "HitDiceUsed": "Hit Dice Used",
         "HitDiceWarn": "{name} has no available {formula} Hit Dice remaining!",
+        "HitDiceNPCWarn": "{name} has no available Hit Dice remaining!",
         "Ideals": "Ideals",
         "Identified": "Identified",
         "Identifier": "Identifier",
@@ -886,6 +1040,8 @@
         "ItemActivationType": "Activation Type",
         "ItemAmmoProperties": "Ammunition Properties",
         "ItemAttackBonus": "Attack Roll Bonus",
+        "ItemAttackFlat": "Flat Bonus",
+        "ItemAttackFlatHint": "If checked, don't add proficiency, ability modifier, or any other bonuses to attack roll except what is included here.",
         "ItemConsumableActivation": "Consumable Activation",
         "ItemConsumableUsage": "Consumable Usage",
         "ItemConsumableDetails": "Consumable Details",
@@ -965,10 +1121,12 @@
         "ItemRequiredStr": "Required Strength",
         "ItemToolBase": "Base Tool",
         "ItemToolBonus": "Tool Bonus",
+        "ItemToolDetails": "Tool Details",
         "ItemToolProficiency": "Tool Proficiency",
         "ItemToolProperties": "Tool Properties",
         "ItemToolStatus": "Tool Status",
         "ItemToolType": "Tool Type",
+        "ItemToolUsage": "Tool Usage",
         "ItemView": "View Item",
         "ItemWeaponAttack": "Weapon Attack",
         "ItemWeaponBase": "Base Weapon",
@@ -1021,6 +1179,11 @@
         "LevelActionDecrease": "Level Down",
         "LevelActionIncrease": "Level Up",
         "LevelCount": "{ordinal} Level",
+        "LevelLimit": {
+            "Label": "Level Limit",
+            "Max": "Maximum Level",
+            "Min": "Minimum Level"
+        },
         "LevelNumber": "Level {level}",
         "LevelScaling": "Level Scaling",
         "LimitedUses": "Limited Uses",
@@ -1036,16 +1199,20 @@
         "LongRestEpic": "Long Rest (1 hour)",
         "LongRestOvernight": "Long Rest (New Day)",
         "LongRestHint": "Take a long rest? On a long rest you will recover hit points, half your maximum hit dice, class resources, limited use item charges, and spell slots.",
+        "LongRestHintGroup": "Take a long rest? On a long rest group members will recover hit points, half of their maximum hit dice, class resources, limited use item charges, and spell slots.",
         "LongRestRecovery": "Recovers after Long Rest",
         "LongRestResult": "{name} takes a long rest and recovers {health} Hit Points and {dice} Hit Dice.",
         "LongRestResultHitDice": "{name} takes a long rest and recovers {dice} Hit Dice.",
         "LongRestResultHitPoints": "{name} takes a long rest and recovers {health} Hit Points.",
         "LongRestResultShort": "{name} takes a long rest.",
+        "MagicalBonus": "Magical Bonus",
         "Materials": "Materials",
         "Max": "Max",
         "MaxCharacterLevelExceededWarn": "Character cannot be advanced past level {max}.",
         "MaxClassLevelExceededWarn": "Class cannot be advanced past level {max}.",
         "MaxClassLevelMinimumWarn": "Class must have at least one level.",
+        "Maximum": "Maximum",
+        "Minimum": "Minimum",
         "Modifier": "Modifier",
         "ModuleArtConfigH": "Configure which module-provided art should be used.",
         "ModuleArtConfigL": "Configure Art",
@@ -1107,6 +1274,17 @@
         "PolymorphWildShape": "Wild Shape",
         "Portrait": "Portrait",
         "Prepared": "Prepared",
+        "Prerequisites": {
+            "Header": "Feature Prerequisites",
+            "FIELDS": {
+                "prerequisites": {
+                    "level": {
+                        "label": "Required Level",
+                        "hint": "Character or class level required to select this feature when levelling up."
+                    }
+                }
+            }
+        },
         "Price": "Price",
         "Proficiency": "Proficiency",
         "ProficiencyBonus": "Proficiency Bonus",
@@ -1182,8 +1360,18 @@
         "NewDayHint": "Recover limited use abilities which recharge \"per day\"?",
         "SaveBonus": "Saving Throw Bonus",
         "SaveGlobalBonusHint": "This bonus applies to all saving throws made by this actor.",
-        "ScrollDetails": "Scroll Details",
-        "ScrollRequiresConcentration": "Requires Concentration",
+        "Scroll": {
+            "CreateFrom": "Create Scroll from {spell}",
+            "CreateScroll": "Create Scroll",
+            "Details": "Scroll Details",
+            "Explanation": {
+                "Label": "Explanation",
+                "Hint": "Amount of the rules on using spell scrolls to include in the created scroll.",
+                "Complete": "Complete",
+                "Reference": "Reference"
+            },
+            "RequiresConcentration": "Requires Concentration"
+        },
         "Senses": "Senses",
         "SensesConfig": "Configure Senses",
         "SensesConfigHint": "Configure any special sensory perception abilities that this actor possesses.",
@@ -1203,6 +1391,7 @@
         "SheetClassMapLocation": "Default 5e Map Location Sheet",
         "SheetClassNPC": "Default 5e NPC Sheet",
         "SheetClassRule": "Default 5e Rule Sheet",
+        "SheetClassSpellList": "Default 5e Spell List Sheet",
         "SheetClassToken": "Default 5e Token Sheet",
         "SheetClassVehicle": "Default 5e Vehicle Sheet",
         "SheetModeEdit": "Edit",
@@ -1227,7 +1416,8 @@
         "ShortRestGritty": "Short Rest (8 hours)",
         "ShortRestEpic": "Short Rest (5 minutes)",
         "ShortRestOvernight": "Short Rest (New Day)",
-        "ShortRestHint": "Take a short rest? On a short rest you may spend remaining Hit Dice and recover primary or secondary resources.",
+        "ShortRestHint": "Take a short rest? On a short rest you may spend remaining Hit Dice and recover item uses.",
+        "ShortRestHintGroup": "Take a short rest? On a short rest group members can spend Hit Dice and will recover item uses.",
         "ShortRestNoHD": "No Hit Dice remaining",
         "ShortRestRecovery": "Recovers after Short Rest",
         "ShortRestResult": "{name} takes a short rest spending {dice} Hit Dice to recover {health} Hit Points.",
@@ -1276,6 +1466,7 @@
         "SkillGlobalBonusCheckHint": "This bonus applies to all skill checks made by this actor.",
         "SkillModifierHint": "{skill} Modifier",
         "SkillPassiveHint": "Passive {skill}",
+        "SkillPassiveSpecificHint": "Passive {ability} ({skill})",
         "SkillPassiveScore": "Passive {skill} Score",
         "SkillPassives": "Skill Passives",
         "Skin": "Skin",
@@ -1344,6 +1535,7 @@
         "SpellNone": "None",
         "SpellPrepAtWill": "At-Will",
         "SpellPrepInnate": "Innate Spellcasting",
+        "SpellPrepRitual": "Ritual Only",
         "SpellPrepPrepared": "Prepared",
         "SpellPrepAlways": "Always Prepared",
         "SpellPreparation": "Spell Preparation",
@@ -1381,12 +1573,135 @@
         "SpellUnprepared": "Unprepared",
         "SpellUsage": "Spell Usage",
         "Spellbook": "Spellbook",
+        "StartingEquipment": {
+            "Title": "Starting Equipment",
+            "Action": {
+                "AddEntry": "Add Entry",
+                "Configure": "Configure Starting Equipment",
+                "RemoveEntry": "Remove Entry"
+            },
+            "Choice": {
+                "Armor": "Choose Armor",
+                "Focus": "Choose Spellcasting Focus",
+                "Tool": "Choose Tool",
+                "Weapon": "Choose Weapon"
+            },
+            "DropHint": "Drop item here to link",
+            "IfProficient": "If Proficient",
+            "Operator": {
+                "AND": "All of…",
+                "OR": "One of…"
+            },
+            "RequireProficiency": "Require Proficiency",
+            "SpecificItem": "Specific Item",
+            "Warning": {
+                "Depth": "Only three levels of depth allowed in starting equipment.",
+                "ItemTypeInvalid": "{type} items cannot be added to starting equipment."
+            },
+            "Wealth": {
+                "Label": "Starting Wealth",
+                "Hint": "Formula in GP that can be used in place of starting equipment."
+            }
+        },
         "SubclassIdentifierHint": "This identifier should match the identifier on the parent class to ensure they are properly linked.",
         "SubclassAssignmentError": "{class} already has a subclass. Remove the existing '{subclass}' subclass before adding a new one.",
         "SubclassDuplicateError": "A subclass with the identifier {identifier} already exists on this actor.",
         "SubclassMismatchWarn": "{name} subclass has no matching class with identifier '{class}'.",
         "SubclassName": "Subclass Name",
         "Subtype": "Subtype",
+        "Summoning": {
+            "Label": "Summoning",
+            "Action": {
+                "Add": "Add Profile",
+                "Configure": "Configure Summons",
+                "Place": "Place Summons",
+                "Remove": "Remove Profile",
+                "Summon": "Summon",
+                "View": "View Summon"
+            },
+            "Bonuses": {
+                "ArmorClass": {
+                    "Label": "Bonus Armor Class",
+                    "Hint": "Bonus to the Armor Class set on the summoned creature added to what is specified in their statblock."
+                },
+                "Attack": {
+                    "Label": "Bonus Attack Damage",
+                    "Hint": "Additional damage done by the creature's attacks."
+                },
+                "Healing": {
+                    "Label": "Bonus Healing",
+                    "Hint": "Additional healing provided by healing abilities."
+                },
+                "HitDice": {
+                    "Label": "Bonus Hit Dice",
+                    "Hint": "Additional hit dice added to the creature on top of what is derived from the HP formula in their statblock. Can only be used when summoning NPC actors."
+                },
+                "HitPoints": {
+                    "Label": "Bonus Hit Points",
+                    "Hint": "Additional hit points added to the creature on top of what is specified in their statblock."
+                },
+                "Saves": {
+                    "Label": "Bonus Save Damage",
+                    "Hint": "Additional damage done by the creature's abilities that require saving throws."
+                }
+            },
+            "Configuration": "Summoning Configuration",
+            "Count": {
+                "Label": "Count"
+            },
+            "CreatureChanges": {
+                "Label": "Creature Changes",
+                "Hint": "Changes that will be made to the creature being summoned. Any @ references used in the following formulas will be based on the summoner's stats. Summoned creature's stats can be referenced using @summon (e.g. @summon.attributes.hd.max to reference the creature's hit dice count)."
+            },
+            "CreatureSizes": {
+                "Label": "Creature Sizes",
+                "Hint": "Summoned creature and token will be changed to this size. If more than one size is selected, then the player will be able to choose from these sizes when summoning."
+            },
+            "CreatureTypes": {
+                "Label": "Creature Types",
+                "Hint": "Summoned creature will be changed to this type. If more than one type is selected, then the player will be able to choose from these types when summoning."
+            },
+            "DisplayName": "Profile Name",
+            "DropHint": "Drop creature here",
+            "ItemChanges": {
+                "Label": "Item Changes",
+                "Hint": "Changes made to items on the summoned creature."
+            },
+            "Level": {
+                "Hint": "Range of levels required to use this profile.",
+                "IdentifierHint": "Identifier used to determine whether the character level or a specific class level should be used for profile level limits."
+            },
+            "Match": {
+                "Attacks": {
+                    "Label": "Match Attacks",
+                    "Hint": "Modify to hit values on the summoned creature's attacks to match that of the summoner."
+                },
+                "Proficiency": {
+                    "Label": "Match Proficiency",
+                    "Hint": "Modify the summoned creature's proficiency to match that of the summoner."
+                },
+                "Saves": {
+                    "Label": "Match Saves",
+                    "Hint": "Modify to saving throw DCs on the summoned creature's abilities to match that of the summoner."
+                }
+            },
+            "Profile": {
+                "Label": "Summons Profile",
+                "LabelPl": "Summons Profiles",
+                "Empty": "Click above to add a profile or drop an creature to summon here."
+            },
+            "Prompt": {
+                "Label": "Summon Prompt",
+                "Hint": "Disable the summoning prompt when item is used. Players will still be able to summon from the chat card."
+            },
+            "Warning": {
+                "CreateActor": "You must have 'Create New Actors' permission in order to summon directly from a compendium.",
+                "NoActor": "Actor cannot be found with UUID '{uuid}' to summon.",
+                "NoOwnership": "You must have ownership of '{actor}' in order to summon it.",
+                "NoProfile": "Cannot find summoning profile {profileId} on '{item}'.",
+                "Wildcard": "You must have 'Use File Browser' permissions to summon creatures with wildcard artwork."
+            }
+        },
         "Supply": "Supply",
         "Suppressed": "Suppressed",
         "Target": "Target",
@@ -1433,6 +1748,12 @@
         "TimeYear": "Years",
         "TMP": "TMP",
         "ToHit": "To Hit",
+        "Tokens": {
+            "NoneSelected": "No Tokens Selected",
+            "NoneTargeted": "No Tokens Targeted",
+            "Selected": "Selected",
+            "Targeted": "Targeted"
+        },
         "TokenRings": {
             "BackgroundColor": "Background Color",
             "Effects": {
@@ -1446,7 +1767,7 @@
             "ScaleCorrection": "Scale Correction",
             "Subject": {
                 "Label": "Subject Path",
-                "Hint": "Explicitly specify a path for the artwork placed over the dynamic token ring. If not provided, the subject image will attempt to be inferred by adding “-subject” to the end of the normal token image path."
+                "Hint": "Explicitly specify a path for the artwork placed over the dynamic token ring. If not provided, the subject image will be set to the normal token artwork."
             },
             "Title": "Dynamic Ring"
         },
@@ -1539,6 +1860,22 @@
         "UsesAvailable": "Available Uses",
         "UsesMax": "Maximum Uses",
         "UsesPeriod": "Recovery Period",
+        "UsesPeriods": {
+            "AtWill": "At Will",
+            "Charges": "Charges",
+            "ChargesAbbreviation": "Charges",
+            "Dawn": "Dawn",
+            "DawnAbbreviation": "Dawn",
+            "Day": "Day",
+            "DayAbbreviation": "Day",
+            "Dusk": "Dusk",
+            "DuskAbbreviation": "Dusk",
+            "Lr": "Long Rest",
+            "LrAbbreviation": "LR",
+            "Never": "Never",
+            "Sr": "Short Rest",
+            "SrAbbreviation": "SR"
+        },
         "Vehicle": "Vehicle",
         "VehicleActions": "Actions",
         "VehicleActionsHint": "Actions taken with full crew complement",
@@ -1576,6 +1913,7 @@
         "WarnCantAddMultipleAdvancements": "It is not currently possible to add multiple items with advancements to an actor at the same time. Please add them individually.",
         "WarnMultipleArmor": "More than one suit of armor equipped, AC calculation may be incorrect.",
         "WarnMultipleShields": "More than one shield equipped, AC calculation may be incorrect.",
+        "WeaponCategory": "{category} Weapon",
         "WeaponImprov": "Improvised",
         "WeaponMartialM": "Martial Melee",
         "WeaponMartialProficiency": "Martial",
@@ -1586,6 +1924,25 @@
         "WeaponSimpleProficiency": "Simple",
         "WeaponSimpleR": "Simple Ranged",
         "Weight": "Weight",
+        "WeightUnit": {
+            "Label": "Weight Units",
+            "Kilograms": {
+                "Label": "Kilograms",
+                "Abbreviation": "kg"
+            },
+            "Megagrams": {
+                "Label": "Tonnes",
+                "Abbreviation": "t"
+            },
+            "Pounds": {
+                "Label": "Pounds",
+                "Abbreviation": "lb"
+            },
+            "Tons": {
+                "Label": "Tons",
+                "Abbreviation": "tn"
+            }
+        },
         "WhisperedTo": "Whispered to",
         "Wiki": "Wiki",
         "available": "available",
@@ -1597,6 +1954,7 @@
     "EDITOR": {
         "DND5E": {
             "Inline": {
+                "ApplyStatus": "Apply Status to Selected Tokens",
                 "AwardEach": "{award} each",
                 "CheckShort": "{check}",
                 "CheckLong": "{check} check",
@@ -1610,21 +1968,33 @@
                 "RollRequest": "Roll Request",
                 "SaveShort": "{save}",
                 "SaveLong": "{save} saving throw",
-                "SpecificCheck": "{ability} ({type})"
+                "SpecificCheck": "{ability} ({type})",
+                "Warning": {
+                    "NoActor": "No selected or assigned actor could be found to execute this roll.",
+                    "NoItemOnActor": "{actor} does not have an Item with name {item}."
+                }
             }
         }
     },
     "EFFECT": {
         "DND5E": {
+            "StatusBleeding": "Bleeding",
             "StatusBurrowing": "Burrowing",
             "StatusConcentrating": "Concentrating",
+            "StatusCursed": "Cursed",
+            "StatusDead": "Dead",
             "StatusDodging": "Dodging",
             "StatusEncumbered": "Encumbered",
+            "StatusEthereal": "Ethereal",
             "StatusExceedingCarryingCapacity": "Exceeding Carrying Capacity",
+            "StatusFlying": "Flying",
             "StatusHeavilyEncumbered": "Heavily Encumbered",
-            "StatusHidden": "Hidden",
+            "StatusHiding": "Hiding",
+            "StatusHovering": "Hovering",
             "StatusMarked": "Marked",
+            "StatusSilenced": "Silenced",
             "StatusSleeping": "Sleeping",
+            "StatusStable": "Stable",
             "StatusSurprised": "Surprised",
             "StatusTransformed": "Transformed"
         }
@@ -1632,8 +2002,8 @@
     "JOURNALENTRYPAGE": {
         "DND5E": {
             "Class": {
-                "AdditionalEquipment": "Equipment",
-                "AdditionalEquipmentHint": "List of equipment granted by this class if taken at first level.",
+                "AdditionalEquipment": "Additional Equipment Description",
+                "AdditionalEquipmentHint": "Additional descriptive text displayed beneath the starting equipment section.",
                 "AdditionalHitPoints": "Additional Hit Points Description",
                 "AdditionalHitPointsHint": "Additional descriptive text displayed beneath the auto-generated hit points section.",
                 "AdditionalTraits": "Additional Proficiencies Description",
@@ -1641,6 +2011,7 @@
                 "Description": "Introduction",
                 "DescriptionHint": "Primary description of the class that will appear first.",
                 "EquipmentHeader": "Equipment",
+                "EquipmentDescription": "You start with the following equipment, in addition to the equipment granted by your background:",
                 "FeaturesHeader": "Class Features",
                 "FeaturesDescription": "As a {lowercaseName}, you gain the following class features, which are summarized in the {name} table.",
                 "HitDice": "<strong>Hit Dice:</strong> {dice} per {class} level",
@@ -1665,7 +2036,36 @@
                 "TraitsHeader": "Proficiencies"
             },
             "EditDescription": "Edit",
-            "TableTOC": "Table: {caption}"
+            "TableTOC": "Table: {caption}",
+            "SpellList": {
+                "DropHint": "Drop spells or folders of spells here to add to the list",
+                "Grouping": {
+                    "Label": "Grouping Mode",
+                    "Hint": "Controls how the spells will be grouped by default in the spell list.",
+                    "Alphabetical": "By First Letter",
+                    "Level": "By Level",
+                    "None": "No Grouping",
+                    "School": "By School"
+                },
+                "IdentifierHint": "Identifier should match that defined on the associated document, if applicable. For example, when creating a spell list for the Wizard class, the identifier should be 'wizard'.",
+                "Type": {
+                    "Label": "Spell List Type",
+                    "Other": "Uncategorized"
+                },
+                "UnlinkedSpells": {
+                    "Label": "Unlinked Spells",
+                    "Add": "Add Unlinked Spell",
+                    "Configuration": "Spell Configuration",
+                    "Edit": "Edit Unlinked Spell"
+                }
+            },
+            "Subclass": {
+                "Description": "Introduction",
+                "DescriptionHint": "Description of the subclass that will appear before any listed features.",
+                "Item": "Selected Subclass",
+                "ItemHint": "Drop a subclass here",
+                "NoValidSubclass": "No valid subclass selected, press the edit button to add a subclass."
+            }
         }
     },
     "MACRO": {
@@ -1688,7 +2088,7 @@
         "5eAutoSpellTemplateN": "Always place Spell Template",
         "5eChallengeVisibility": {
             "Name": "Challenge Visibility",
-            "Hint": "Control what roll DCs are visible to the players and whether successess/failures are highlighted.",
+            "Hint": "Control what roll DCs are visible to the players and whether successes/failures are highlighted.",
             "All": "Show all",
             "None": "Hide all",
             "Player": "Show only from other players"
@@ -1721,6 +2121,8 @@
         "5eMetricL": "Replaces all reference to lbs with kgs and updates the encumbrance calculations to use metric weight units.",
         "5eNoAdvancementsN": "Disable level-up automation",
         "5eNoAdvancementsL": "Do not prompt for level-up or character creation choices.",
+        "5eNoConcentrationN": "Disable concentration tracking",
+        "5eNoConcentrationL": "Disable the system's automated tracking of concentration.",
         "5eNoExpL": "Remove experience bars from character sheets.",
         "5eNoExpN": "Disable Experience Tracking",
         "5eProfBonus": "PHB: Bonus (+2, +3, +4, +5, +6)",
@@ -1741,11 +2143,41 @@
         "5eTokenRings": {
             "Name": "Disable Dynamic Token Rings",
             "Hint": "Disabling the token ring animations can improve performance."
+        },
+        "DND5E": {
+            "ALLOWSUMMONING": {
+                "Name": "Allow Summoning",
+                "Hint": "Allow players to use summoning abilities to summon actors. Players must also have the Create Token core permission for this to work."
+            },
+            "COLLAPSETRAYS": {
+                "Name": "Collapse Trays in Chat",
+                "Hint": "Automatically collapse damage, hit, and effect trays that appear in chat cards.",
+                "Always": "Collapse All",
+                "Older": "Collapse Older Trays",
+                "Never": "Expand All"
+            },
+            "THEME": {
+                "Name": "Theme",
+                "Hint": "Theme that will apply to the UI and all sheets by default. Automatic will be determined by your browser or operating system settings."
+            }
+        }
+    },
+    "SHEETS": {
+        "DND5E": {
+            "THEME": {
+                "Label": "Theme",
+                "Automatic": "Automatic",
+                "Dark": "Dark Mode",
+                "Light": "Light Mode"
+            }
         }
     },
     "SOURCE": {
         "BOOK": {
             "SRD": "System Reference Document 5.1"
         }
+    },
+    "SIDEBAR": {
+        "SortModePriority": "Sort by priority"
     }
 }

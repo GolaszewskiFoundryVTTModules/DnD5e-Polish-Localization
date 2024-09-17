@@ -48,7 +48,9 @@
         "JournalEntryPage": {
             "class": "Podsumowanie Klasy",
             "map": "Lokacja na Mapie",
-            "rule": "Zasada"
+            "rule": "Zasada",
+            "spells": "Lista Zaklęć",
+            "subclass": "Podsumowanie Podklasy"
         }
     },
     "ITEM": {
@@ -122,6 +124,7 @@
         "AbilityUseConsumableDestroyHint": "Użycie {type} zużyje ostatni ładunek i doprowadzi do zniszczenia.",
         "AbilityUseConsumableDestroyResourceHint": "Użycie {type} zużyje ostatni ładunek {name} i zniszczy go.",
         "AbilityUseConsume": "Zużyć Dostępny Ładunek?",
+        "AbilityUseConsumeAction": "Wykorzystaj Użycie",
         "AbilityUseChargesLabel": "{value} Ładuje Się",
         "AbilityUseConsumableLabel": "{max} na {per}",
         "AbilityUseCast": "Rzuć Zaklęcie",
@@ -140,6 +143,7 @@
         "ActionAbbr": "A",
         "ActionPl": "Akcje",
         "ActionAbil": "Test Cechy",
+        "ActionEnch": "Zaklnij",
         "ActionHeal": "Leczenie",
         "ActionMSAK": "Atak w Zwarciu Zaklęciem",
         "ActionMWAK": "Atak w Zwarciu Bronią",
@@ -147,6 +151,7 @@
         "ActionRSAK": "Atak Dystansowy Czarem",
         "ActionRWAK": "Atak Dystansowy Bronią",
         "ActionSave": "Rzut Obronny",
+        "ActionSumm": "Przyzwij",
         "ActionUtil": "Użytkowa",
         "ActionWarningNoItem": "Żądany przedmiot {item} nie znajduje się już w posiadaniu aktora {name}",
         "ActionWarningNoToken": "Aby użyć tej opcji musisz posiadać jeden lub więcej kontrolowanych Żetonów.",
@@ -155,6 +160,7 @@
         "ActiveEffectOverrideWarning": "Ta wartość jest modyfikowana przez Aktywny Efekt i nie może być zmieniana. Usuń efekt aby ją zmienić.",
         "Add": "Dodaj",
         "AdditionalControls": "Dodatkowe Sterowanie",
+        "AdditionalSettings": "Dodatkowe Ustawienia",
         "AddEmbeddedItemPromptHint": "Czy chcesz dodać te przedmioty do swojej karty postaci?",
         "AdvancementAbilityScoreImprovementTitle": "Zwiększenie Cechy",
         "AdvancementAbilityScoreImprovementHint": "Zezwól graczowi na zwiększenie jednej lub więcej cech lub wybierz opcjonalny Atut.",
@@ -165,6 +171,7 @@
             "other": "Maksymalnie {points} punktów na cechę"
         },
         "AdvancementAbilityScoreImprovementFeatHint": "Upuść tu cechę lub wybierz ją zamiast zwiększenia cech.",
+        "AdvancementAbilityScoreImprovementFeatLevelWarning": "Aby wybrać ten atut, musisz być co najmniej poziomu {level}.",
         "AdvancementAbilityScoreImprovementFeatWarning": "Mogą być wybrane tylko zdolności o typie 'Atut'.",
         "AdvancementAbilityScoreImprovementFixed": "Stałe Zwiększenie",
         "AdvancementAbilityScoreImprovementLockedHint": "Cechy nie mogą być zmieniane przez wybrany atut.",
@@ -210,9 +217,16 @@
         "AdvancementHitPointsRollButton": "Rzuć {die}",
         "AdvancementItemChoiceTitle": "Wybierz Przedmioty",
         "AdvancementItemChoiceHint": "Zaoferuj graczowi przedmioty do wyboru (takie jak wyposażenie, zdolności czy zaklęcia), spośród których będzie mógł wybrać na określonych poziomach.",
+        "AdvancementItemChoiceChoices": "Wybory",
+        "AdvancementItemChoiceChoose": "wybierz {count}",
         "AdvancementItemChoiceChosen": "Wybrano: {current} z {max}",
+        "AdvancementItemChoiceFeatureLevelWarning": "Aby wybrać ten atrybut, musisz być co najmniej poziomu {level}.",
         "AdvancementItemChoiceLevelsHint": "Określ jak wiele opcji może zostać wybranych na poszczególnych poziomach.",
+        "AdvancementItemChoiceNoOriginalError": "Poprzednio wybrana opcja nie jest już dostępna do zastąpienia.",
         "AdvancementItemChoicePreviouslyChosenWarning": "Ten przedmiot został już wybrany na poprzednim poziomie.",
+        "AdvancementItemChoiceReplacement": "Pozwalaj na Zastępowanie",
+        "AdvancementItemChoiceReplacementNone": "Bez Zastępowania",
+        "AdvancementItemChoiceReplacementTitle": "zastąp",
         "AdvancementItemChoiceSpellLevelAvailable": "Dowolny Dostępny Poziom",
         "AdvancementItemChoiceSpellLevelAvailableWarning": "Podczas tego rozwoju, można wybrać tylko zaklęcia kręgu {level} lub niższego.",
         "AdvancementItemChoiceSpellLevelSpecificWarning": "Podczas tego rozwoju można wybrać tylko zaklęcia kręgu {level}.",
@@ -228,7 +242,7 @@
         "AdvancementItemGrantDuplicateWarning": "Ten przedmiot już istnieje w tym rozwoju.",
         "AdvancementItemGrantRecursiveWarning": "Nie możesz przyznać przedmiotu w jego własnym rozwoju.",
         "AdvancementItemGrantOptional": "Opcjonalne",
-        "AdvancementItemGrantOptionalHint": "Gdy przedmioty są opcjonalne, gracze będą mogli zrezygnować z ich przyjęcia, w przeciwnym razie wszystkie są przyznawane.",
+        "AdvancementItemGrantOptionalHint": "Jeśli rozwój oznaczony jest jako opcjonalny, gracze będą mogli zrezygnować z przyjęcia dowolnego z następujących przedmiotów, w przeciwnym razie wszystkie są przyznawane.",
         "AdvancementItemTypeInvalidWarning": "W tym rozwoju nie można przyznać przedmiotów typu {type}.",
         "AdvancementLevelHeader": "Poziom {level}",
         "AdvancementLevelAnyHeader": "Dowolny Poziom",
@@ -299,6 +313,7 @@
         "AdvancementTraitModeUpgradeHint": "Zyskaj w cesze biegłość jeśli jeszcze jej nie masz, w przeciwnym wypadku zyskaj znawstwo.",
         "AdvancementTraitType": "Typ Cechy",
         "Advantage": "Ułatwienie",
+        "AdvantageMode": "Tryb Ułatwienia",
         "Age": "Wiek",
         "Alignment": "Charakter",
         "AlignmentCE": "Chaotycznie Zły",
@@ -315,6 +330,7 @@
         "Attunement": "Zestrojenie",
         "AttunementMax": "Maksimum Zestrojonych Przedmiotów",
         "AttunementNone": "Nie Wymaga Zestrojenia",
+        "AttunementOptional": "Opcjonalne Zestrojenie",
         "AttunementRequired": "Wymaga Zestrojenia",
         "AttunementAttuned": "Zestrojono",
         "AttunementOverride": "Nadpisz Zestrojenie",
@@ -344,6 +360,9 @@
         "AttackPl": "Ataki",
         "AttackRoll": "Rzut na Atak",
         "Attributes": "Cechy",
+        "AttrConcentration": {
+            "Limit": "Limit"
+        },
         "Automatic": "Automatycznie",
         "AutomaticValue": "Automatycznie ({value})",
         "Award": {
@@ -369,6 +388,7 @@
         "BonusAbility": "Globalne Premie Cech",
         "BonusAbilityCheck": "Globalna Premia Testów Cech",
         "BonusAbilitySave": "Globalna Premia Rzutów Obronnych",
+        "BonusAbilitySaveTitle": "Globalne Rzuty Obronne",
         "BonusAbilitySkill": "Globalna Premia Testów Umiejętności",
         "BonusAction": "Akcja Dodatkowa",
         "BonusActionAbbr": "AD",
@@ -390,6 +410,12 @@
         "BonusesHint": "Zdefiniuj globalne premie dodawane do wyniku określonego rodzaju rzutów. Przykładowo: 1d4 + 2",
         "BonusesInstructions": "Zarządzaj premiami postaci dodawanymi do stosownych rzutów kością",
         "Conditions": "Stany",
+        "Controls": {
+            "Hint": "Włącz w UI różnorakie podpowiedzi dla pewnych opcji sterowania klawiaturą i myszą.",
+            "LockHint": "Kliknięcie Środkowym aby zablokować",
+            "MiddleClick": "Kliknięcie Środkowym",
+            "Name": "Włącz Wskazówki Sterowania"
+        },
         "ChallengeRating": "Stopień Wyzwania",
         "Charged": "Dostępna",
         "Charges": "Ładunki",
@@ -398,6 +424,8 @@
         "ChatContextTempHP": "Zastosuj Tymczasowe PW",
         "ChatContextDoubleDamage": "Zastosuj Podwojone Obrażenia",
         "ChatContextHalfDamage": "Zastosuj Połowiczne Obrażenia",
+        "ChatContextSelectHit": "Wybierz Trafione Cele",
+        "ChatContextSelectMiss": "Wybierz Chybione Cele",
         "ChatFlavor": "Stylizacja Wiadomości Czatu",
         "CheckBonus": "Premia do Testu",
         "ClassAdd": "Dodaj Klasę",
@@ -409,6 +437,7 @@
         "ClassName": "Nazwa Klasy",
         "ClassOriginal": "Oryginalna Klasa",
         "ClassSaves": "Rzuty Obronne",
+        "Confirm": "Potwierdź",
         "ComponentMaterial": "Materialny",
         "ComponentMaterialAbbr": "M",
         "ComponentSomatic": "Somatyczny",
@@ -452,9 +481,27 @@
         "ConUnconscious": "Nieprzytomność",
         "Concentration": "Koncentracja",
         "ConcentrationAbbr": "K",
+        "ConcentrationBreak": "Złamanie Koncentracji",
+        "ConcentrationBreakWarning": "Złamanie koncentracji na efekcie aktywnym na innych istotach wymaga obecności aktywnego MG.",
+        "ConcentrationBonus": "Premia do Koncentracji",
         "ConcentrationDuration": "Koncentracja, do {duration}",
+        "ConcentratingOn": "Utrzymujesz koncentrację na efektach '{name}' ({type}).",
+        "ConcentratingEndChoice": "Koncentrujesz się na efektach z więcej niż jednego źródła. Wybierz, który z nich chcesz zakończyć.",
+        "ConcentratingMissingItem": "Efekt, na którym się koncentrujesz i który miałby zostać zastąpiony, nie istnieje.",
+        "ConcentratingLimited": "Nie możesz zacząć koncentracji na kolejnym efekcie.",
+        "ConcentrationLimit": "Limit Koncentracji",
+        "ConcentratingEnd": "Zakończ Koncentrację",
+        "ConcentratingItemless": "Koncentracja Bez Źródła",
+        "ConcentratingWarnLimit": "Nie możesz utrzymywać koncentracji na większej ilości efektów!",
+        "ConcentratingWarnLimitOptional": "Aby użyć tego przedmiotu, możesz zakończyć koncentrację na jednym ze swoich trwających efektów.",
+        "ConcentratingWarnLimitZero": "Nie możesz utrzymać koncentracji na żadnym efekcie!",
+        "ConcentrationConfigurationHint": "Konfiguruj modyfikatory i premie koncentracji, mające zastosowanie dla tej istoty.",
         "ConsumeTitle": "Zużywanie Zasobów",
         "ConsumeAmount": "Zużywana Ilość",
+        "ConsumeHint": {
+            "Attribute": "Zużywany atrybut (np. currency.gp)",
+            "Item": "UUID celu w kompendium"
+        },
         "ConsumeTarget": "Cel Zużywania",
         "ConsumeType": "Kategoria Zużywania",
         "ConsumeAmmunition": "Amunicja",
@@ -471,6 +518,7 @@
         "ConsumeWarningNoQuantity": "{name} skończył się {type}!",
         "ConsumeWarningZeroAttribute": "{name} skończył się zapas przypisanych atrybutów!",
         "ConsumeResource": "Zużyć Zasób?",
+        "ConsumeResourceAction": "Zużyj Zasób",
         "ConsumeRecharge": "Zużyć Odnowienie?",
         "ConsumeScaling": "Skalowanie Zasobu",
         "ConsumeScalingLabel": "Użyj Zasobów",
@@ -574,11 +622,26 @@
         "Damage": "Obrażenia",
         "DamageAcid": "od Kwasu",
         "DamageAll": "Wszystkie obrażenia",
+        "DamageApplication": {
+            "Change": {
+                "Modification": "Modyfikacja {type}",
+                "Immunity": "Niepodatność na {type}",
+                "Resistance": "Odporność na {type}",
+                "Vulnerability": "Podatność na {type}"
+            },
+            "Downgrading": "Zmniejszono {source} do Odporności",
+            "Ignoring": "Zignorowano {source}"
+        },
         "DamageBludgeoning": "Obuchowe",
         "DamageCold": "od Zimna",
         "DamageFire": "od Ognia",
         "DamageForce": "od Magii",
         "DamageLightning": "od Elektryczności",
+        "DamageModification": {
+            "Label": "Modyfikacja Obrażeń",
+            "Hint": "Formuły dla wartości, które zostaną dodane do typowanych obrażeń zadawanych temu aktorowi. Negatywne wartości zmniejszają zadawane obrażenia.",
+            "BypassHint": "Te właściwości broni pominą modyfikację obrażeń dla fizycznych obrażeń."
+        },
         "DamageNecrotic": "Nekrotyczne",
         "DamagePiercing": "Kłute",
         "DamagePhysical": "Niemagiczne Fizyczne",
@@ -642,6 +705,7 @@
         "DistMiAbbr": "mi",
         "DistSelf": "Na Siebie",
         "DistTouch": "Dotyk",
+        "DocumentUseWarn": "Brak ci uprawnień aby użyć przedmiotu na tym dokumencie.",
         "DocumentViewWarn": "Brak ci uprawnień do oglądania tego dokumentu.",
         "Duration": "Czas Trwania",
         "DurationPermanent": "Stały",
@@ -653,8 +717,83 @@
         "Effect": "Efekt",
         "Effects": "Efekty",
         "EffectsApplyTokens": "Zastosuj do wybranych żetonów",
-        "EffectApplyWarning": "Efektu nie można zastosować do żetonów, których właścicielem nie jesteś.",
+        "EffectApplyWarningConcentration": "Stosowanie efektu, na którym koncentruje się inna postać wymaga uprawnień MG.",
+        "EffectApplyWarningOwnership": "Efektu nie można zastosować do żetonów, których właścicielem nie jesteś.",
         "EffectsSearch": "Search effects",
+        "Enchantment": {
+            "Action": {
+                "Apply": "Zastosuj Zaklęcie",
+                "Configure": "Skonfiguruj Zaklęcie",
+                "Create": "Utwórz Zaklęcie",
+                "Delete": "Usuń Zaklęcie",
+                "Disable": "Wyłącz Zaklęcie",
+                "Edit": "Edytuj Zaklęcie",
+                "Enable": "Włącz Zaklęcie",
+                "Remove": "Wyłącz Zaklęcie"
+            },
+            "Category": {
+                "Active": "Aktywne Zaklęcia",
+                "Empty": "Nie utworzono żadnych zaklęć, użyj przycisku powyżej aby je utworzyć.",
+                "General": "Zaklęcia",
+                "Inactive": "Nieaktywne Zaklęcia"
+            },
+            "Configuration": "Konfiguracja Zaklęć",
+            "DropArea": "Umieść tu przedmiot aby go zakląć…",
+            "FIELDS": {
+                "enchantment": {
+                    "label": "Konfiguracja Zaklęć",
+                    "classIdentifier": {
+                        "hint": "Identyfikator wykorzystywany do określania, czy na rzecz limitu poziomu zaklęć ma być wykorzystywany poziom postaci, czy poziom określonej klasy."
+                    },
+                    "items": {
+                        "max": {
+                            "label": "Limit Przedmiotów",
+                            "hint": "Formuła określając maksymalną możliwą liczbę zaklęć tego typu, które mogą być aktywne na raz."
+                        },
+                        "period": {
+                            "label": "Okres Zamiany",
+                            "hint": "Jak często zaklęcie tego typu może być związane ponownie, z innym przedmiotem."
+                        }
+                    },
+                    "restrictions": {
+                        "label": "Ograniczenia",
+                        "hint": "Ograniczenia typu przedmiotu, na jaki może być nakładane dane zaklęcie.",
+                        "allowMagical": {
+                            "label": "Zezwól na Magiczne",
+                            "hint": "Pozwól aby przedmioty, które już są magiczne, mogły być zaklinane."
+                        },
+                        "type": {
+                            "label": "Typ Przedmiotu",
+                            "hint": "Typ przedmiotu, do którego może zostać zastosowane to zaklęcie."
+                        }
+                    }
+                }
+            },
+            "Label": "Zaklęcie",
+            "Level": {
+                "Hint": "Zakres poziomów niezbędny do używania tego zaklęcia."
+            },
+            "Items": {
+                "Entry": "{item} na <em>{actor}</em>"
+            },
+            "Riders": {
+                "Effect": {
+                    "Label": "Efekty Dodatkowe",
+                    "Hint": "Te dodatkowe efekty zostaną nałożone na przedmiot, kiedy zaklęcie zostanie na niego nałożone i usunięte wraz z nim."
+                },
+                "Item": {
+                    "Label": "Przedmioty Dodatkowe",
+                    "Hint": "Te dodatkowe przedmioty zostaną dodane do ekwipunku istoty, kiedy jeden z jej przedmiotów zostanie zaklęty tym zaklęciem i usunięte jeśli zaklęcie zostanie kiedykolwiek zdjęte."
+                }
+            },
+            "Warning": {
+                "ConcentrationEnded": "Nie możesz zastosować tego zaklęcia, ponieważ zakończyła się koncentracja.",
+                "NoMagicalItems": "Przedmioty, które już są magiczne, nie mogą zostać zaklęte.",
+                "NotOnActor": "Zaklęcia mogą zostać nałożone jedynie na przedmioty, nie bezpośrednio na aktorów.",
+                "Override": "Ta wartość jest modyfikowana przez Zaklęcie i nie może zostać zmieniona. Wyłącz zaklęcie w panelu efektów, aby ją edytować.",
+                "WrongType": "Przedmioty typu {incorrectType} nie mogą być zaklinane przez to zaklęcie, dozwolone są jedynie przedmioty typu {allowedType}."
+            }
+        },
         "Environment": "Otoczenie",
         "EquipmentBonus": "Magiczna Premia",
         "EquipmentClothing": "Ubranie",
@@ -677,6 +816,7 @@
         "ExperiencePointsMin": "Minimalne PD dla Tego Poziomu",
         "ExperiencePointsValue": "Wartość PD",
         "Expertise": "Znawstwo",
+        "Favorite": "Ulubione",
         "FavoriteDrop": "Upuść Ulubione",
         "FavoriteRemove": "Usuń Ulubione",
         "Favorites": "Ulubione",
@@ -713,6 +853,7 @@
             }
         },
         "Focus": {
+            "Label": "Fokus Rzucania Zaklęć",
             "Arcane": "Fokus Magii Tajemnej",
             "Druidic": "Fokus Druidyczny",
             "Holy": "Fokus Boski"
@@ -738,6 +879,12 @@
         "EffectPassive": "Efekty Pasywne",
         "EffectInactive": "Efekty Nieaktywne",
         "EffectNew": "Nowy Efekt",
+        "EffectType": {
+            "Inactive": "Nieaktywny",
+            "Passive": "Pasywny",
+            "Temporary": "Tymczasowy",
+            "Unavailable": "Niedostępny"
+        },
         "EffectUnavailable": "Niedostępne Efekty",
         "EffectUnavailableInfo": "Powiązany przedmiot musi zostać wyposażony lub zestrojony aby można było je aktywować",
         "Encumbrance": "Obciążenie",
@@ -821,6 +968,7 @@
                 "one": "Członek",
                 "other": "Członkowie"
             },
+            "PlaceMembers": "Rozmieść Członków",
             "Primary": {
                 "Remove": "Usuń status Obecnej Drużyny",
                 "Set": "Ustaw jako Obecną Drużynę"
@@ -837,6 +985,7 @@
         "Hair": "Włosy",
         "HalfProficient": "Połowa Biegłości",
         "Healing": "Leczenie",
+        "HealingRoll": "Rzut Leczenia",
         "HealingTemp": "Leczenie (Tymczasowe)",
         "Height": "Wzrost",
         "HitPoints": "Punkty Wytrzymałości",
@@ -857,6 +1006,10 @@
         "HPFormulaRollMessage": "Rzuć Formułę na Punkty Wytrzymałości",
         "HitDie": "Kość Wytrzymałości",
         "HitDice": "Kości Wytrzymałości",
+        "HitDiceAutoSpend": {
+            "Label": "Automatycznie Wydawaj KW",
+            "Hint": "Automatycznie wykorzystuj Kości Wytrzymałości dopóki się nie wyczerpią, lub dopóki PW nie będą pełne."
+        },
         "HitDiceConfig": "Dostosuj Kości Wytrzymałości",
         "HitDiceConfigHint": "Dostosuj pozostałe kości wytrzymałości dla każdej z klas.",
         "HitDiceMax": "Maksymalne Kości Wytrzymałości",
@@ -864,6 +1017,7 @@
         "HitDiceRoll": "Rzut Kości Wytrzymałości",
         "HitDiceUsed": "Zużyte Kości Wytrzymałości",
         "HitDiceWarn": "{name} nie ma już więcej Kości Wytrzymałości {formula}!",
+        "HitDiceNPCWarn": "{name} nie ma już dostępnych Kości Wytrzymałości!",
         "Ideals": "Ideały",
         "Identified": "Zidentyfikowano",
         "Identifier": "Identyfikator",
@@ -886,6 +1040,8 @@
         "ItemActivationType": "Rodzaj Aktywacji",
         "ItemAmmoProperties": "Właściwości Amunicji",
         "ItemAttackBonus": "Premia do Rzutu Ataku",
+        "ItemAttackFlat": "Płaska Premia",
+        "ItemAttackFlatHint": "Jeśli włączone, nie dodawaj do rzutu ataku biegłości, modyfikatorów cech ani żadnych innych premii, poza tymi wymienionymi tutaj.",
         "ItemConsumableActivation": "Aktywacja Przedmiotu Zużywalnego",
         "ItemConsumableUsage": "Użycie Przedmiotu",
         "ItemConsumableDetails": "Szczegóły Przedmiotu",
@@ -965,10 +1121,12 @@
         "ItemRequiredStr": "Wymagana Siła",
         "ItemToolBase": "Bazowe Narzędzie",
         "ItemToolBonus": "Premia z Narzędzia",
+        "ItemToolDetails": "Szczegóły Narzędzia",
         "ItemToolProficiency": "Biegłość w posługiwaniu się narzędziami",
         "ItemToolProperties": "Właściwości Narzędzia",
         "ItemToolStatus": "Status Narzędzia",
         "ItemToolType": "Rodzaj Narzędzia",
+        "ItemToolUsage": "Zastosowanie Narzędzia",
         "ItemView": "Zobacz Przedmiot",
         "ItemWeaponAttack": "Atak Bronią",
         "ItemWeaponBase": "Base Weapon",
@@ -1021,6 +1179,11 @@
         "LevelActionDecrease": "Obniż Poziom",
         "LevelActionIncrease": "Podnieś Poziom",
         "LevelCount": "Poziom {ordinal}.",
+        "LevelLimit": {
+            "Label": "Limit Poziomu",
+            "Max": "Maksymalny Poziom",
+            "Min": "Minimalny Poziom"
+        },
         "LevelNumber": "Poziom {level}",
         "LevelScaling": "Skalowanie z Poziomem",
         "LimitedUses": "Ograniczone Użycia",
@@ -1036,16 +1199,20 @@
         "LongRestEpic": "Długo Odpoczynek (1 godzina)",
         "LongRestOvernight": "Długi Odpoczynek (Kolejny Dzień)",
         "LongRestHint": "Odbyć długi odpoczynek? Podczas długiego odpoczynku odzyskujesz punkty wytrzymałości, połowę maksymalnej ilości kości wytrzymałości, zasoby klasowe, ładunki przedmiotów oraz komórki zaklęć.",
+        "LongRestHintGroup": "Czy odbyć długi odpoczynek? Przy długim odpoczynku członkowie drużyny odzyskają Punkty Wytrzymałości, połowę maksymalnych Kości Wytrzymałości, zasoby klasowe, ograniczone ładunki przedmiotów i komórki zaklęć.",
         "LongRestRecovery": "Odnawia się po Długim Odpoczynku",
         "LongRestResult": "{name} odbywa długi odpoczynek i odzyskuje {health} Punktów Wytrzymałości oraz {dice} Kości Wytrzymałości.",
         "LongRestResultHitDice": "{name} odbywa długi odpoczynek i odzyskuje {dice} Kości Wytrzymałości.",
         "LongRestResultHitPoints": "{name} odbywa długi odpoczynek i odzyskuje {health} Punktów Wytrzymałości.",
         "LongRestResultShort": "{name} odbywa długi odpoczynek.",
+        "MagicalBonus": "Premia Magiczna",
         "Materials": "Materiały",
         "Max": "Maksymalne",
         "MaxCharacterLevelExceededWarn": "Postać nie może przekroczyć poziomu {max}.",
         "MaxClassLevelExceededWarn": "Klasa nie może przekroczyć poziomu {max}.",
         "MaxClassLevelMinimumWarn": "Klasa musi posiadać przynajmniej jeden poziom.",
+        "Maximum": "Maksimum",
+        "Minimum": "Minimum",
         "Modifier": "Modyfikator",
         "ModuleArtConfigH": "Wybierz, która z zapewnianych przez moduł grafik ma być użyta.",
         "ModuleArtConfigL": "Zarządzaj Grafiką",
@@ -1107,6 +1274,17 @@
         "PolymorphWildShape": "Dzika Postać",
         "Portrait": "Portret",
         "Prepared": "Przygotowane",
+        "Prerequisites": {
+            "Header": "Wymagania Atrybutu",
+            "FIELDS": {
+                "prerequisites": {
+                    "level": {
+                        "label": "Wymagany Poziom",
+                        "hint": "Poziom postaci lub klasy wymagany do wybrania tego atrybutu podczas awansu."
+                    }
+                }
+            }
+        },
         "Price": "Cena",
         "Proficiency": "Biegłość",
         "ProficiencyBonus": "Premia z Biegłości",
@@ -1182,8 +1360,18 @@
         "NewDayHint": "Odnowić umiejętności o użyciach ograniczonych \"na dzień\"?",
         "SaveBonus": "Premia do Rzutów Obronnych",
         "SaveGlobalBonusHint": "Ta premia jest stosowana do wszystkich rzutów obronnych wykonywanych przez tego aktora.",
-        "ScrollDetails": "Szczegóły Zwoju",
-        "ScrollRequiresConcentration": "Wymaga Koncentracji",
+        "Scroll": {
+            "CreateFrom": "Stwórz Zwój z Zaklęciem {spell}",
+            "CreateScroll": "Stwórz Zwój",
+            "Details": "Szczegóły Zwoju",
+            "Explanation": {
+                "Label": "Wyjaśnienie",
+                "Hint": "Amount of the rules on using spell scrolls to include in the created scroll.",
+                "Complete": "Zakończ",
+                "Reference": "Odniesienie"
+            },
+            "RequiresConcentration": "Wymaga Koncentracji"
+        },
         "Senses": "Zmysły",
         "SensesConfig": "Zarządzaj Zmysłami",
         "SensesConfigHint": "Zarządzaj wszelkimi specjalnymi właściwościami postrzegania zmysłami tego aktora.",
@@ -1203,6 +1391,7 @@
         "SheetClassMapLocation": "Domyślna Karta Lokacji na Mapie 5e",
         "SheetClassNPC": "Domyślna Karta Bohatera Niezależnego 5e",
         "SheetClassRule": "Domyślna Karta Zasady 5e",
+        "SheetClassSpellList": "Domyślna Karta Zaklęcia 5e",
         "SheetClassToken": "Domyślna Karta Żetonu 5e",
         "SheetClassVehicle": "Domyślna Karta Pojazdu 5e",
         "SheetModeEdit": "Edytuj",
@@ -1228,6 +1417,7 @@
         "ShortRestEpic": "Krótki Odpoczynek (5 minut)",
         "ShortRestOvernight": "Krótki Odpoczynek (Kolejny Dzień)",
         "ShortRestHint": "Odbyć krótki odpoczynek? W trakcie krótkie odpoczynku możesz użyć pozostałe Kości Wytrzymałości oraz odzyskać zasoby.",
+        "ShortRestHintGroup": "Odbyć krótki odpoczynek? Przy krótkim odpoczynku członkowie drużyny mogą wykorzystać swoje Kości Wytrzymałości oraz odzyskać ładunki przedmiotów.",
         "ShortRestNoHD": "Brak dostępnych Kości Wytrzymałości",
         "ShortRestRecovery": "Odnawia się po Krótkim Odpoczynku",
         "ShortRestResult": "{name} odbywa krótki odpoczynek używając {dice} Kości Wytrzymałości by odzyskać {health} Punktów Wytrzymałości.",
@@ -1276,6 +1466,7 @@
         "SkillGlobalBonusCheckHint": "Ta premia jest stosowana do wszystkich testów umiejętności wykonywanych przez tego aktora.",
         "SkillModifierHint": "Modyfikator - {skill}",
         "SkillPassiveHint": "Pasywna - {skill}",
+        "SkillPassiveSpecificHint": "Pasywna - {skill} ({ability})",
         "SkillPassiveScore": "Pasywna Wartość {skill}",
         "SkillPassives": "Pasywne Umiejętności",
         "Skin": "Skin",
@@ -1344,6 +1535,7 @@
         "SpellNone": "Brak",
         "SpellPrepAtWill": "Bez ograniczeń",
         "SpellPrepInnate": "Wrodzone Czarowanie",
+        "SpellPrepRitual": "Tylko Rytuał",
         "SpellPrepPrepared": "Przygotowane",
         "SpellPrepAlways": "Zawsze Przygotowane",
         "SpellPreparation": "Przygotowanie Zaklęcia",
@@ -1381,12 +1573,135 @@
         "SpellUnprepared": "Nieprzygotowane",
         "SpellUsage": "Użycie zaklęcia",
         "Spellbook": "Księga czarów",
+        "StartingEquipment": {
+            "Title": "Ekwipunek Startowy",
+            "Action": {
+                "AddEntry": "Dodaj Wpis",
+                "Configure": "Zarządzaj Ekwipunkiem Startowym",
+                "RemoveEntry": "Usuń Wpis"
+            },
+            "Choice": {
+                "Armor": "Wybierz Pancerz",
+                "Focus": "Wybierz Fokus Rzucania Zaklęć",
+                "Tool": "Wybierz Narzędzie",
+                "Weapon": "Wybierz Broń"
+            },
+            "DropHint": "Upuść tu przedmiot, aby go załączyć",
+            "IfProficient": "Jeśli Biegłość",
+            "Operator": {
+                "AND": "Wszystko spośród…",
+                "OR": "Jedno spośród…"
+            },
+            "RequireProficiency": "Wymaga Biegłości",
+            "SpecificItem": "Określony Przedmiot",
+            "Warning": {
+                "Depth": "W ekwipunku startowym dozwolone są tylko trzy poziomy zagłębienia.",
+                "ItemTypeInvalid": "Przedmioty typu {type} nie mogą zostać dodane do ekwipunku startowego."
+            },
+            "Wealth": {
+                "Label": "Początkowe Bogactwo",
+                "Hint": "Formuła, która może zostać wykorzystana do określenia GP zamiast startowego ekwipunku."
+            }
+        },
         "SubclassIdentifierHint": "Ten identyfikator powinien odpowiadać identyfikatorowi klasy, aby zapewnić, że są powiązane.",
         "SubclassAssignmentError": "{class} ma już podklasę. Usuń istniejącą podklasę '{subclass}' przed dodaniem kolejnej.",
         "SubclassDuplicateError": "Ten aktor posiada już podklasę o identyfikatorze {identifier}.",
         "SubclassMismatchWarn": "Dla podklasy {name} nie ma klasy z odpowiadającym identyfikatorem '{class}'.",
         "SubclassName": "Nazwa Podklasy",
         "Subtype": "Podtyp",
+        "Summoning": {
+            "Label": "Summoning",
+            "Action": {
+                "Add": "Add Profile",
+                "Configure": "Configure Summons",
+                "Place": "Place Summons",
+                "Remove": "Remove Profile",
+                "Summon": "Summon",
+                "View": "View Summon"
+            },
+            "Bonuses": {
+                "ArmorClass": {
+                    "Label": "Bonus Armor Class",
+                    "Hint": "Bonus to the Armor Class set on the summoned creature added to what is specified in their statblock."
+                },
+                "Attack": {
+                    "Label": "Bonus Attack Damage",
+                    "Hint": "Additional damage done by the creature's attacks."
+                },
+                "Healing": {
+                    "Label": "Bonus Healing",
+                    "Hint": "Additional healing provided by healing abilities."
+                },
+                "HitDice": {
+                    "Label": "Bonus Hit Dice",
+                    "Hint": "Additional hit dice added to the creature on top of what is derived from the HP formula in their statblock. Can only be used when summoning NPC actors."
+                },
+                "HitPoints": {
+                    "Label": "Bonus Hit Points",
+                    "Hint": "Additional hit points added to the creature on top of what is specified in their statblock."
+                },
+                "Saves": {
+                    "Label": "Bonus Save Damage",
+                    "Hint": "Additional damage done by the creature's abilities that require saving throws."
+                }
+            },
+            "Configuration": "Summoning Configuration",
+            "Count": {
+                "Label": "Count"
+            },
+            "CreatureChanges": {
+                "Label": "Creature Changes",
+                "Hint": "Changes that will be made to the creature being summoned. Any @ references used in the following formulas will be based on the summoner's stats. Summoned creature's stats can be referenced using @summon (e.g. @summon.attributes.hd.max to reference the creature's hit dice count)."
+            },
+            "CreatureSizes": {
+                "Label": "Creature Sizes",
+                "Hint": "Summoned creature and token will be changed to this size. If more than one size is selected, then the player will be able to choose from these sizes when summoning."
+            },
+            "CreatureTypes": {
+                "Label": "Creature Types",
+                "Hint": "Summoned creature will be changed to this type. If more than one type is selected, then the player will be able to choose from these types when summoning."
+            },
+            "DisplayName": "Profile Name",
+            "DropHint": "Drop creature here",
+            "ItemChanges": {
+                "Label": "Item Changes",
+                "Hint": "Changes made to items on the summoned creature."
+            },
+            "Level": {
+                "Hint": "Range of levels required to use this profile.",
+                "IdentifierHint": "Identifier used to determine whether the character level or a specific class level should be used for profile level limits."
+            },
+            "Match": {
+                "Attacks": {
+                    "Label": "Match Attacks",
+                    "Hint": "Modify to hit values on the summoned creature's attacks to match that of the summoner."
+                },
+                "Proficiency": {
+                    "Label": "Match Proficiency",
+                    "Hint": "Modify the summoned creature's proficiency to match that of the summoner."
+                },
+                "Saves": {
+                    "Label": "Match Saves",
+                    "Hint": "Modify to saving throw DCs on the summoned creature's abilities to match that of the summoner."
+                }
+            },
+            "Profile": {
+                "Label": "Summons Profile",
+                "LabelPl": "Summons Profiles",
+                "Empty": "Click above to add a profile or drop an creature to summon here."
+            },
+            "Prompt": {
+                "Label": "Summon Prompt",
+                "Hint": "Disable the summoning prompt when item is used. Players will still be able to summon from the chat card."
+            },
+            "Warning": {
+                "CreateActor": "You must have 'Create New Actors' permission in order to summon directly from a compendium.",
+                "NoActor": "Actor cannot be found with UUID '{uuid}' to summon.",
+                "NoOwnership": "You must have ownership of '{actor}' in order to summon it.",
+                "NoProfile": "Cannot find summoning profile {profileId} on '{item}'.",
+                "Wildcard": "You must have 'Use File Browser' permissions to summon creatures with wildcard artwork."
+            }
+        },
         "Supply": "Zasób",
         "Suppressed": "Stłumione",
         "Target": "Cel",
@@ -1433,6 +1748,12 @@
         "TimeYear": "Lat",
         "TMP": "TMP",
         "ToHit": "Do Trafienia",
+        "Tokens": {
+            "NoneSelected": "Nie Wybrano Żetonów",
+            "NoneTargeted": "Nie Obrano za Cel Żetonów",
+            "Selected": "Wybrane",
+            "Targeted": "Obrane za Cel"
+        },
         "TokenRings": {
             "BackgroundColor": "Kolor Tła",
             "Effects": {
@@ -1446,7 +1767,7 @@
             "ScaleCorrection": "Korekta Skali",
             "Subject": {
                 "Label": "Ścieżka do Podmiotu",
-                "Hint": "Podaj manualnie ścieżkę do grafiki umieszczanej na dynamicznym pierścieniem. Jeśli nie podano, podjęta zostanie próba odnalezienia grafiki poprzez dodanie \"-subject\" do oryginalnej ścieżki grafiki."
+                "Hint": "Podaj manualnie ścieżkę do grafiki umieszczanej nad dynamicznym pierścieniem. Jeśli nie podano, użyta zostanie standardowa grafika Żetonu."
             },
             "Title": "Dynamiczny Pierścień"
         },
@@ -1539,6 +1860,22 @@
         "UsesAvailable": "Dostępne Użycia",
         "UsesMax": "Maksymalna Liczba Użyć",
         "UsesPeriod": "Okres Odnowienia",
+        "UsesPeriods": {
+            "AtWill": "Do Woli",
+            "Charges": "Ładunki",
+            "ChargesAbbreviation": "Ładunki",
+            "Dawn": "Świt",
+            "DawnAbbreviation": "Świt",
+            "Day": "Dzień",
+            "DayAbbreviation": "Dzień",
+            "Dusk": "Zmierzch",
+            "DuskAbbreviation": "Zmierzch",
+            "Lr": "Długi Odpoczynek",
+            "LrAbbreviation": "DO",
+            "Never": "Nigdy",
+            "Sr": "Krótki Odpoczynek",
+            "SrAbbreviation": "KO"
+        },
         "Vehicle": "Pojazd",
         "VehicleActions": "Akcje",
         "VehicleActionsHint": "Akcje podejmowane gdy załoga jest skompletowana",
@@ -1576,6 +1913,7 @@
         "WarnCantAddMultipleAdvancements": "Obecnie nie jest możliwe dodawanie wielu przedmiotów jednocześnie do rozwoju danego aktora. Proszę przeciągać je pojedynczo.",
         "WarnMultipleArmor": "Wyposażono więcej niż jeden zestaw pancerza, obliczana KP może być nieprawidłowa.",
         "WarnMultipleShields": "Wyposażono więcej niż jedną tarczę, obliczana KP może być nieprawidłowa.",
+        "WeaponCategory": "Bronie Typu {category}",
         "WeaponImprov": "Improwizowana",
         "WeaponMartialM": "Żołnierska Broń Biała",
         "WeaponMartialProficiency": "Broń Żołnierska",
@@ -1586,6 +1924,25 @@
         "WeaponSimpleProficiency": "Proste",
         "WeaponSimpleR": "Prosta Broń Dystansowa",
         "Weight": "Waga",
+        "WeightUnit": {
+            "Label": "Jednostki Wagi",
+            "Kilograms": {
+                "Label": "Kilogramy",
+                "Abbreviation": "kg"
+            },
+            "Megagrams": {
+                "Label": "Tony",
+                "Abbreviation": "t"
+            },
+            "Pounds": {
+                "Label": "Funty",
+                "Abbreviation": "lb"
+            },
+            "Tons": {
+                "Label": "Tony Angielskie",
+                "Abbreviation": "tn"
+            }
+        },
         "WhisperedTo": "Wyszeptano do",
         "Wiki": "Wiki",
         "available": "dostępne",
@@ -1597,6 +1954,7 @@
     "EDITOR": {
         "DND5E": {
             "Inline": {
+                "ApplyStatus": "Zastosuj Status do Wybranych Żetonów",
                 "AwardEach": "{award} dla każdego",
                 "CheckShort": "{check}",
                 "CheckLong": "test {check}",
@@ -1610,21 +1968,33 @@
                 "RollRequest": "Żądanie Rzutu",
                 "SaveShort": "{save}",
                 "SaveLong": "Rzut Obronny: {save}",
-                "SpecificCheck": "{ability} ({type})"
+                "SpecificCheck": "{ability} ({type})",
+                "Warning": {
+                    "NoActor": "Nie odnaleziono przypisanego ani wybranego aktora, który mógłby wykonać ten rzut.",
+                    "NoItemOnActor": "{actor} nie posiada Przedmiotu o nazwie {item}."
+                }
             }
         }
     },
     "EFFECT": {
         "DND5E": {
+            "StatusBleeding": "Krwawienie",
             "StatusBurrowing": "Rycie",
             "StatusConcentrating": "Koncentracja",
+            "StatusCursed": "Klątwa",
+            "StatusDead": "Śmierć",
             "StatusDodging": "Unik",
             "StatusEncumbered": "Obciążenie",
+            "StatusEthereal": "Eteryczność",
             "StatusExceedingCarryingCapacity": "Przekroczono Dostępny Udźwig",
+            "StatusFlying": "Latanie",
             "StatusHeavilyEncumbered": "Poważne Obciążenie",
-            "StatusHidden": "Ukrycie",
+            "StatusHiding": "Ukrycie",
+            "StatusHovering": "Lewitacja",
             "StatusMarked": "Naznaczenie",
+            "StatusSilenced": "Uciszenie",
             "StatusSleeping": "Sen",
+            "StatusStable": "Stabilizacja",
             "StatusSurprised": "Zaskoczenie",
             "StatusTransformed": "Transformacja"
         }
@@ -1632,8 +2002,8 @@
     "JOURNALENTRYPAGE": {
         "DND5E": {
             "Class": {
-                "AdditionalEquipment": "Ekwipunek",
-                "AdditionalEquipmentHint": "Wyposażenie zapewniane przez tę klasę, jeśli zostanie wybrana na 1 poziomie.",
+                "AdditionalEquipment": "Opis Dodatkowego Ekwipunku",
+                "AdditionalEquipmentHint": "Dodatkowy opis, wyświetlany pod sekcją startowego ekwipunku klasy.",
                 "AdditionalHitPoints": "Opis Dodatkowych Punktów Wytrzymałości",
                 "AdditionalHitPointsHint": "Dodatkowy opis, wyświetlany pod auto-generowaną sekcją Punktów Wytrzymałości.",
                 "AdditionalTraits": "Dodatkowy Opis Biegłości",
@@ -1641,6 +2011,7 @@
                 "Description": "Przedstawienie",
                 "DescriptionHint": "Pierwszorzędny opis klasy, który pojawi się w pierwszej kolejności.",
                 "EquipmentHeader": "Ekwipunek",
+                "EquipmentDescription": "Zaczynasz z następującym ekwipunkiem, w dodatku ekwipunku zapewnianego przez twoje pochodzenie:",
                 "FeaturesHeader": "Zdolności Klasowe",
                 "FeaturesDescription": "Jako {lowercaseName}, zyskujesz poniższe zdolności klasowe, które podsumowano w tabeli {name}.",
                 "HitDice": "<strong>Kości Wytrzymałości:</strong> {dice} na poziom klasy {class}",
@@ -1665,7 +2036,36 @@
                 "TraitsHeader": "Biegłości"
             },
             "EditDescription": "Edytuj",
-            "TableTOC": "Tabela: {caption}"
+            "TableTOC": "Tabela: {caption}",
+            "SpellList": {
+                "DropHint": "Aby dodać tu zaklęcia, przeciągnij tu je lub całe ich foldery",
+                "Grouping": {
+                    "Label": "Tryb Grupowania",
+                    "Hint": "Określa w jaki sposób będą domyślnie grupowane zaklęcia na liście.",
+                    "Alphabetical": "Alfabetycznie",
+                    "Level": "Po Kręgu",
+                    "None": "Bez Grupowania",
+                    "School": "Po Szkole"
+                },
+                "IdentifierHint": "Identyfikator powinien zgadzać się z identyfikatorem skojarzonego dokumentu, jeśli dotyczy. Przykładowo, przy tworzeniu listy zaklęć dla Maga, identyfikator powinien brzmieć 'wizard'.",
+                "Type": {
+                    "Label": "Typ Listy Zaklęć",
+                    "Other": "Nieskategoryzowana"
+                },
+                "UnlinkedSpells": {
+                    "Label": "Niepowiązane Zaklęcia",
+                    "Add": "Dodaj Niepowiązane Zaklęcie",
+                    "Configuration": "Konfiguracja Zaklęć",
+                    "Edit": "Edytuj Niepowiązane Zaklęcia"
+                }
+            },
+            "Subclass": {
+                "Description": "Wprowadzenie",
+                "DescriptionHint": "Opis podklasy, który pokaże się przed listą atrybutów.",
+                "Item": "Wybrana Podklasa",
+                "ItemHint": "Upuść tu podklasę",
+                "NoValidSubclass": "Nie wybrano właściwej podklasy, kliknij przycisk edycji, aby dodać podklasę."
+            }
         }
     },
     "MACRO": {
@@ -1721,6 +2121,8 @@
         "5eMetricL": "Zastępuje wszystkie odniesienia do funtów kilogramami i aktualizuje formułę obliczającą obciążenie postaci aby używała jednostek metrycznych.",
         "5eNoAdvancementsN": "Wyłącz automatyzację awansów",
         "5eNoAdvancementsL": "Nie wyświetlaj okien dialogowych przy tworzeniu postaci i awansach na kolejny poziom.",
+        "5eNoConcentrationN": "Wyłącz śledzenie koncentracji",
+        "5eNoConcentrationL": "Wyłącz zautomatyzowane śledzenie koncentracji w systemie.",
         "5eNoExpL": "Usuń paski doświadczenia z kart postaci.",
         "5eNoExpN": "Wyłącz Śledzenie Punktów Doświadczenia",
         "5eProfBonus": "PHB: Premia (+2, +3, +4, +5, +6)",
@@ -1741,11 +2143,41 @@
         "5eTokenRings": {
             "Name": "Wyłącz Automatyczne Pierścienie Żetonów",
             "Hint": "Wyłączenie automatycznych pierścieni żetonów może poprawić wydajność."
+        },
+        "DND5E": {
+            "ALLOWSUMMONING": {
+                "Name": "Allow Summoning",
+                "Hint": "Allow players to use summoning abilities to summon actors. Players must also have the Create Token core permission for this to work."
+            },
+            "COLLAPSETRAYS": {
+                "Name": "Collapse Trays in Chat",
+                "Hint": "Automatically collapse damage, hit, and effect trays that appear in chat cards.",
+                "Always": "Collapse All",
+                "Older": "Collapse Older Trays",
+                "Never": "Expand All"
+            },
+            "THEME": {
+                "Name": "Theme",
+                "Hint": "Theme that will apply to the UI and all sheets by default. Automatic will be determined by your browser or operating system settings."
+            }
+        }
+    },
+    "SHEETS": {
+        "DND5E": {
+            "THEME": {
+                "Label": "Motyw",
+                "Automatic": "Automatyczny",
+                "Dark": "Ciemny",
+                "Light": "Jasny"
+            }
         }
     },
     "SOURCE": {
         "BOOK": {
             "SRD": "System Reference Document 5.1"
         }
+    },
+    "SIDEBAR": {
+        "SortModePriority": "Sortuj po priorytecie"
     }
 }
